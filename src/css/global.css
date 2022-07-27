@@ -2588,7 +2588,7 @@ body footer .container .tablet-responsive {
   opacity: 1 !important;
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1200px) {
   body header {
     padding: 10px 0;
     position: relative;
@@ -2997,23 +2997,23 @@ body main section.bank-section .container .alphabets-search .double .left-alphab
     height: 30px;
   }
 }
-@media only screen and (max-width: 1300px) and (min-width: 700px) {
+@media only screen and (max-width: 1200px) and (min-width: 700px) {
   body main section.definition-offer .container .definition-header .definition-title h1 {
     font-size: 32px;
   }
 }
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1200px) {
   body main section.definition-offer .container .definition-header .eng-def {
     font-size: 18px;
   }
 }
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1200px) {
   body main section.definition-offer .container .definition-header .ka-def {
     font-size: 18px;
     margin-top: 20px;
   }
 }
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1200px) {
   body main section.definition-offer .container .other-terms .description {
     margin-bottom: 20px;
   }
@@ -3024,7 +3024,7 @@ body main section.bank-section .container .alphabets-search .double .left-alphab
     font-size: 12px;
   }
 }
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1200px) {
   body main section.contact-form .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -3039,7 +3039,7 @@ body main section.bank-section .container .alphabets-search .double .left-alphab
     width: 100%;
   }
 }
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1200px) {
   body footer {
     padding: 30px 0;
   }
@@ -3069,17 +3069,17 @@ body main section.bank-section .container .alphabets-search .double .left-alphab
     margin-left: -30px;
   }
 }
-@media only screen and (max-width: 1300px) and (min-width: 768px) {
+@media only screen and (max-width: 1200px) and (min-width: 768px) {
   body footer .container .middle-block {
     display: none;
   }
 }
-@media only screen and (max-width: 1300px) and (min-width: 768px) {
+@media only screen and (max-width: 1200px) and (min-width: 768px) {
   body footer .container .right-block-partners {
     display: none;
   }
 }
-@media only screen and (max-width: 1300px) and (min-width: 768px) {
+@media only screen and (max-width: 1200px) and (min-width: 768px) {
   body footer .container .tablet-responsive {
     display: block;
   }
