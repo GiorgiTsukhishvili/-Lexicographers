@@ -520,6 +520,22 @@ body {
             }
           }
           .login {
+            .password-input {
+              width: 75%;
+              position: relative;
+              .show-password {
+                position: absolute;
+                right: 20px;
+                top: 45px;
+                transform: translateY(50%);
+                cursor: pointer;
+              }
+
+              input {
+                width: 100%;
+              }
+            }
+
             .remember-psw {
               width: 75%;
               margin: 55px 0 45px 0;
@@ -633,6 +649,23 @@ body {
             flex-direction: column;
             justify-content: center;
             align-items: center;
+
+            .password-input {
+              width: 75%;
+              position: relative;
+              input {
+                width: 100%;
+              }
+
+              img {
+                position: absolute;
+                right: 20px;
+                top: 47px;
+                transform: translateY(50%);
+                cursor: pointer;
+              }
+            }
+
             span {
               vertical-align: middle;
               margin-top: 10px;

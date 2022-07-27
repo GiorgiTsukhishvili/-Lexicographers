@@ -862,6 +862,21 @@ body main section.signup-login .container .toggle-form .login {
       -ms-flex-align: center;
           align-items: center;
 }
+body main section.signup-login .container .toggle-form .login .password-input {
+  width: 75%;
+  position: relative;
+}
+body main section.signup-login .container .toggle-form .login .password-input .show-password {
+  position: absolute;
+  right: 20px;
+  top: 45px;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  cursor: pointer;
+}
+body main section.signup-login .container .toggle-form .login .password-input input {
+  width: 100%;
+}
 body main section.signup-login .container .toggle-form .login .remember-psw {
   width: 75%;
   margin: 55px 0 45px 0;
@@ -1015,6 +1030,21 @@ body main section.signup-login .container .toggle-form .signup {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+body main section.signup-login .container .toggle-form .signup .password-input {
+  width: 75%;
+  position: relative;
+}
+body main section.signup-login .container .toggle-form .signup .password-input input {
+  width: 100%;
+}
+body main section.signup-login .container .toggle-form .signup .password-input img {
+  position: absolute;
+  right: 20px;
+  top: 47px;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  cursor: pointer;
 }
 body main section.signup-login .container .toggle-form .signup span {
   vertical-align: middle;
