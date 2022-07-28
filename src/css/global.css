@@ -754,6 +754,7 @@ body main section.bank-results .container .result .description .spans .author {
   font-family: "DejaVuSans";
   font-size: 18px;
   color: #1d2933;
+  margin-right: 40px;
 }
 body main section.bank-results .container .result .description .spans .date {
   font-family: "BPGVenuri2010";
@@ -2756,7 +2757,10 @@ body footer .container .tablet-responsive {
     width: 20px;
   }
   body main .chatbot {
-    display: none;
+    right: 40px;
+  }
+  body main .chatbot img {
+    width: 80%;
   }
   body main section.profile-section .container {
     width: 90%;
@@ -3302,7 +3306,10 @@ body footer .container .tablet-responsive .contact-info p a:visited:hover {
     width: 20px;
   }
   body main .chatbot {
-    display: none;
+    right: 20px;
+  }
+  body main .chatbot img {
+    width: 60%;
   }
   body main section.profile-section .container {
     width: 90%;
