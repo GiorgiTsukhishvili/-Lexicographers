@@ -268,16 +268,17 @@ body {
               padding: 5px 20px;
               background-color: $btnGray;
               cursor: pointer;
-              &:first-child {
-                background-color: $tagsyellow;
-                a {
-                  color: $darkBlue;
-                }
-              }
+
               a {
                 font-family: $venuri;
                 font-size: 16px;
                 color: #f9f7f5;
+              }
+            }
+            .active {
+              background-color: $tagsyellow;
+              a {
+                color: $darkBlue;
               }
             }
           }
@@ -412,6 +413,24 @@ body {
             margin: 30px 0 60px 0;
             padding: 20px 0 20px 20px;
             position: relative;
+
+            .like-number {
+              position: absolute;
+              top: 40%;
+              right: 35px;
+              font-size: 19px;
+              color: $btnGray;
+              font-family: "DejaVuSans";
+
+              @media (max-width: 1200px) {
+                top: 35%;
+              }
+
+              @media (max-width: 765px) {
+                font-size: 17px;
+              }
+            }
+
             .like {
               @include flex-jc-ai(center, center);
               width: 41px;
