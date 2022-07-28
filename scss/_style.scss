@@ -733,6 +733,12 @@ body {
               .rules {
                 display: flex;
                 align-items: center;
+                min-width: 370px;
+
+                @media (max-width: 545px) {
+                  min-width: 200px;
+                }
+
                 #rules {
                   margin: 0;
                   padding: 0;
@@ -743,10 +749,17 @@ body {
                 label {
                   a {
                     color: $btnGray;
-                    font-size: 18px;
+                    font-size: 17px;
                     font-family: $dejavu;
+                    border-bottom: 1px solid $btnGray;
+                    padding-bottom: 2px;
                   }
                 }
+              }
+              @media (max-width: 975px) {
+                flex-direction: column;
+                text-align: center;
+                gap: 30px;
               }
             }
           }

@@ -1151,6 +1151,12 @@ body main section.signup-login .container .toggle-form .signup .robot-rules .rul
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  min-width: 370px;
+}
+@media (max-width: 545px) {
+  body main section.signup-login .container .toggle-form .signup .robot-rules .rules {
+    min-width: 200px;
+  }
 }
 body main section.signup-login .container .toggle-form .signup .robot-rules .rules #rules {
   margin: 0;
@@ -1161,8 +1167,20 @@ body main section.signup-login .container .toggle-form .signup .robot-rules .rul
 }
 body main section.signup-login .container .toggle-form .signup .robot-rules .rules label a {
   color: #798996;
-  font-size: 18px;
+  font-size: 17px;
   font-family: "DejaVuSans";
+  border-bottom: 1px solid #798996;
+  padding-bottom: 2px;
+}
+@media (max-width: 975px) {
+  body main section.signup-login .container .toggle-form .signup .robot-rules {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
 }
 body main section.signup-login .container .click-recovery {
   display: none;
