@@ -354,6 +354,11 @@ body header .container .sign-in-btn .active {
   color: #000000;
   border: none;
 }
+@media (max-width: 1450px) {
+  body header .container .sign-in-btn {
+    margin-left: 30px;
+  }
+}
 body header .container .sign-in-btn a {
   background-color: #798996;
   color: #fff;
