@@ -862,6 +862,21 @@ body main section.signup-login .container .toggle-form .login {
       -ms-flex-align: center;
           align-items: center;
 }
+body main section.signup-login .container .toggle-form .login .password-input {
+  width: 75%;
+  position: relative;
+}
+body main section.signup-login .container .toggle-form .login .password-input .show-password {
+  position: absolute;
+  right: 20px;
+  top: 45px;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  cursor: pointer;
+}
+body main section.signup-login .container .toggle-form .login .password-input input {
+  width: 100%;
+}
 body main section.signup-login .container .toggle-form .login .remember-psw {
   width: 75%;
   margin: 55px 0 45px 0;
@@ -1015,6 +1030,21 @@ body main section.signup-login .container .toggle-form .signup {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+body main section.signup-login .container .toggle-form .signup .password-input {
+  width: 75%;
+  position: relative;
+}
+body main section.signup-login .container .toggle-form .signup .password-input input {
+  width: 100%;
+}
+body main section.signup-login .container .toggle-form .signup .password-input img {
+  position: absolute;
+  right: 20px;
+  top: 47px;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  cursor: pointer;
 }
 body main section.signup-login .container .toggle-form .signup span {
   vertical-align: middle;
@@ -2588,7 +2618,7 @@ body footer .container .tablet-responsive {
   opacity: 1 !important;
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1200px) {
   body header {
     padding: 10px 0;
     position: relative;
@@ -2997,23 +3027,23 @@ body main section.bank-section .container .alphabets-search .double .left-alphab
     height: 30px;
   }
 }
-@media only screen and (max-width: 1300px) and (min-width: 700px) {
+@media only screen and (max-width: 1200px) and (min-width: 700px) {
   body main section.definition-offer .container .definition-header .definition-title h1 {
     font-size: 32px;
   }
 }
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1200px) {
   body main section.definition-offer .container .definition-header .eng-def {
     font-size: 18px;
   }
 }
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1200px) {
   body main section.definition-offer .container .definition-header .ka-def {
     font-size: 18px;
     margin-top: 20px;
   }
 }
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1200px) {
   body main section.definition-offer .container .other-terms .description {
     margin-bottom: 20px;
   }
@@ -3024,7 +3054,7 @@ body main section.bank-section .container .alphabets-search .double .left-alphab
     font-size: 12px;
   }
 }
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1200px) {
   body main section.contact-form .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -3039,7 +3069,7 @@ body main section.bank-section .container .alphabets-search .double .left-alphab
     width: 100%;
   }
 }
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1200px) {
   body footer {
     padding: 30px 0;
   }
@@ -3069,17 +3099,17 @@ body main section.bank-section .container .alphabets-search .double .left-alphab
     margin-left: -30px;
   }
 }
-@media only screen and (max-width: 1300px) and (min-width: 768px) {
+@media only screen and (max-width: 1200px) and (min-width: 768px) {
   body footer .container .middle-block {
     display: none;
   }
 }
-@media only screen and (max-width: 1300px) and (min-width: 768px) {
+@media only screen and (max-width: 1200px) and (min-width: 768px) {
   body footer .container .right-block-partners {
     display: none;
   }
 }
-@media only screen and (max-width: 1300px) and (min-width: 768px) {
+@media only screen and (max-width: 1200px) and (min-width: 768px) {
   body footer .container .tablet-responsive {
     display: block;
   }
