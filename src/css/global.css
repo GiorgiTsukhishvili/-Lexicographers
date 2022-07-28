@@ -736,6 +736,7 @@ body main section.bank-results .container .result .description .spans .author {
   font-family: "DejaVuSans";
   font-size: 18px;
   color: #1d2933;
+  margin-right: 40px;
 }
 body main section.bank-results .container .result .description .spans .date {
   font-family: "BPGVenuri2010";
