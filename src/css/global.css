@@ -483,16 +483,16 @@ body main section.bank-section .container .alphabets-search .bank-tags div {
   background-color: #798996;
   cursor: pointer;
 }
-body main section.bank-section .container .alphabets-search .bank-tags div:first-child {
-  background-color: #eed370;
-}
-body main section.bank-section .container .alphabets-search .bank-tags div:first-child a {
-  color: #1d2933;
-}
 body main section.bank-section .container .alphabets-search .bank-tags div a {
   font-family: "BPGVenuri2010";
   font-size: 16px;
   color: #f9f7f5;
+}
+body main section.bank-section .container .alphabets-search .bank-tags .active {
+  background-color: #eed370;
+}
+body main section.bank-section .container .alphabets-search .bank-tags .active a {
+  color: #1d2933;
 }
 body main section.bank-section .container .alphabets-search .double {
   display: -webkit-box;
@@ -703,6 +703,24 @@ body main section.bank-results .container .result .description {
   padding: 20px 0 20px 20px;
   position: relative;
 }
+body main section.bank-results .container .result .description .like-number {
+  position: absolute;
+  top: 40%;
+  right: 35px;
+  font-size: 19px;
+  color: #798996;
+  font-family: "DejaVuSans";
+}
+@media (max-width: 1200px) {
+  body main section.bank-results .container .result .description .like-number {
+    top: 35%;
+  }
+}
+@media (max-width: 765px) {
+  body main section.bank-results .container .result .description .like-number {
+    font-size: 17px;
+  }
+}
 body main section.bank-results .container .result .description .like {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -745,6 +763,7 @@ body main section.bank-results .container .result .description .spans .author {
   font-family: "DejaVuSans";
   font-size: 18px;
   color: #1d2933;
+  margin-right: 40px;
 }
 body main section.bank-results .container .result .description .spans .date {
   font-family: "BPGVenuri2010";
@@ -2747,7 +2766,10 @@ body footer .container .tablet-responsive {
     width: 20px;
   }
   body main .chatbot {
-    display: none;
+    right: 40px;
+  }
+  body main .chatbot img {
+    width: 80%;
   }
   body main section.profile-section .container {
     width: 90%;
@@ -3294,7 +3316,10 @@ body footer .container .tablet-responsive .contact-info p a:visited:hover {
     width: 20px;
   }
   body main .chatbot {
-    display: none;
+    right: 20px;
+  }
+  body main .chatbot img {
+    width: 60%;
   }
   body main section.profile-section .container {
     width: 90%;
