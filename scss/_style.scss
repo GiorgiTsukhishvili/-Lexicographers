@@ -160,7 +160,9 @@ body {
           color: $black;
           border: none;
         }
-
+        @media (max-width: 1450px) {
+          margin-left: 30px;
+        }
         a {
           background-color: $btnGray;
           color: $white;
