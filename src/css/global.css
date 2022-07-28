@@ -2739,7 +2739,10 @@ body footer .container .tablet-responsive {
     width: 20px;
   }
   body main .chatbot {
-    display: none;
+    right: 40px;
+  }
+  body main .chatbot img {
+    width: 80%;
   }
   body main section.profile-section .container {
     width: 90%;
@@ -3285,7 +3288,10 @@ body footer .container .tablet-responsive .contact-info p a:visited:hover {
     width: 20px;
   }
   body main .chatbot {
-    display: none;
+    right: 20px;
+  }
+  body main .chatbot img {
+    width: 60%;
   }
   body main section.profile-section .container {
     width: 90%;

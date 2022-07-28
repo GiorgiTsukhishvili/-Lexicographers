@@ -1981,7 +1981,10 @@ body {
     }
     main {
       .chatbot {
-        display: none;
+        right: 40px;
+        img {
+          width: 80%;
+        }
       }
       section.profile-section {
         .container {
@@ -2548,7 +2551,10 @@ body {
     }
     main {
       .chatbot {
-        display: none;
+        right: 20px;
+        img {
+          width: 60%;
+        }
       }
       section.profile-section {
         .container {
