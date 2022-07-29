@@ -373,6 +373,31 @@ body header .container .sign-in-btn a:hover {
   color: #000000;
   border: none;
 }
+body header .container .signed-in-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+  font-family: "DejaVuSans";
+  margin-left: 20px;
+}
+body header .container .signed-in-profile__picture {
+  width: 86px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+body header .container .signed-in-profile__text:active, body header .container .signed-in-profile__text:visited {
+  text-decoration: none;
+  color: inherit;
+}
+@media (max-width: 1200px) {
+  body header .container .signed-in-profile {
+    display: none;
+  }
+}
 body header .container .profile {
   cursor: pointer;
   display: -webkit-box;
@@ -415,6 +440,7 @@ body header .container .profile-menu {
   background: #FEFCFB;
   -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
           box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  z-index: 1;
 }
 body header .container .profile-menu ul li {
   margin-top: 31px;

@@ -518,6 +518,23 @@ if (document.querySelector("ul.nav-ul")) {
     });
   });
 }
+
+// Profile menu showing or not showing
+
+const profileMenuPicture = document.querySelector(
+  ".signed-in-profile__picture"
+);
+
+const hiddenMenu = document.querySelector("#profile-menu");
+
+profileMenuPicture.addEventListener("click", () => {
+  hiddenMenu.classList.remove("hidden");
+});
+
+hiddenMenu.addEventListener("click", () => {
+  setTimeout(() => hiddenMenu.classList.add("hidden"), 1000);
+});
+
 // profile fields edit
 const saveButton = document.querySelector(".submit-profile-edit");
 

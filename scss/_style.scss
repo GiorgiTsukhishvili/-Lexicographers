@@ -178,6 +178,30 @@ body {
         }
       }
 
+      .signed-in-profile {
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        font-family: $dejavu;
+        margin-left: 20px;
+
+        &__picture {
+          width: 86px;
+          margin-left: 20px;
+          cursor: pointer;
+        }
+
+        &__text:active,
+        &__text:visited {
+          text-decoration: none;
+          color: inherit;
+        }
+
+        @media (max-width: 1200px) {
+          display: none;
+        }
+      }
+
       .profile {
         cursor: pointer;
         @include flex-jc-ai(center, center);
@@ -208,6 +232,7 @@ body {
         padding: 22px 29px;
         background: $bgFrom;
         box-shadow: 0px 3px 6px #00000029;
+        z-index: 1;
         ul {
           li {
             margin-top: 31px;
