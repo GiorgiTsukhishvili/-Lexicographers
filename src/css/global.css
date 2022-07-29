@@ -2971,6 +2971,7 @@ body footer .container .tablet-responsive {
     display: block;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
+    cursor: pointer;
   }
   body main section.bank-section .container .alphabets-search .double .left-alphabet .ge-alphabet img:hover {
     -webkit-transform: scale(2);
@@ -2983,6 +2984,7 @@ body footer .container .tablet-responsive {
     display: block;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
+    cursor: pointer;
   }
   body main section.bank-section .container .alphabets-search .double .left-alphabet .en-alphabet img:hover {
     -webkit-transform: scale(2);
