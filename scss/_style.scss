@@ -2246,6 +2246,11 @@ body {
                   justify-content: space-between;
                   img {
                     display: block;
+                    transition: all 0.3s;
+                  }
+
+                  img:hover {
+                    transform: scale(2);
                   }
                   .collect-letters {
                     width: 100%;
@@ -2254,6 +2259,11 @@ body {
                 .en-alphabet {
                   img {
                     display: block;
+                    transition: all 0.3s;
+                  }
+
+                  img:hover {
+                    transform: scale(2);
                   }
                 }
                 .desktop-alphabet {
