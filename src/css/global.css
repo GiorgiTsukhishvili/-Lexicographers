@@ -354,6 +354,11 @@ body header .container .sign-in-btn .active {
   color: #000000;
   border: none;
 }
+@media (max-width: 1450px) {
+  body header .container .sign-in-btn {
+    margin-left: 30px;
+  }
+}
 body header .container .sign-in-btn a {
   background-color: #798996;
   color: #fff;
@@ -367,6 +372,31 @@ body header .container .sign-in-btn a:hover {
   text-decoration: none;
   color: #000000;
   border: none;
+}
+body header .container .signed-in-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+  font-family: "DejaVuSans";
+  margin-left: 20px;
+}
+body header .container .signed-in-profile__picture {
+  width: 86px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+body header .container .signed-in-profile__text:active, body header .container .signed-in-profile__text:visited {
+  text-decoration: none;
+  color: inherit;
+}
+@media (max-width: 1200px) {
+  body header .container .signed-in-profile {
+    display: none;
+  }
 }
 body header .container .profile {
   cursor: pointer;
@@ -410,6 +440,7 @@ body header .container .profile-menu {
   background: #FEFCFB;
   -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
           box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  z-index: 1;
 }
 body header .container .profile-menu ul li {
   margin-top: 31px;
@@ -483,16 +514,16 @@ body main section.bank-section .container .alphabets-search .bank-tags div {
   background-color: #798996;
   cursor: pointer;
 }
-body main section.bank-section .container .alphabets-search .bank-tags div:first-child {
-  background-color: #eed370;
-}
-body main section.bank-section .container .alphabets-search .bank-tags div:first-child a {
-  color: #1d2933;
-}
 body main section.bank-section .container .alphabets-search .bank-tags div a {
   font-family: "BPGVenuri2010";
   font-size: 16px;
   color: #f9f7f5;
+}
+body main section.bank-section .container .alphabets-search .bank-tags .active {
+  background-color: #eed370;
+}
+body main section.bank-section .container .alphabets-search .bank-tags .active a {
+  color: #1d2933;
 }
 body main section.bank-section .container .alphabets-search .double {
   display: -webkit-box;
@@ -564,10 +595,13 @@ body main section.bank-section .container .alphabets-search .double .left-alphab
 body main section.bank-section .container .alphabets-search .double .left-alphabet .ge-alphabet .collect-letters::-webkit-scrollbar {
   display: none;
 }
-body main section.bank-section .container .alphabets-search .double .left-alphabet span {
+body main section.bank-section .container .alphabets-search .double .left-alphabet a:link,
+body main section.bank-section .container .alphabets-search .double .left-alphabet a:visited {
+  color: inherit;
+  text-decoration: none;
   font-family: "BPGVenuri2010";
   font-size: 24px;
-  margin-right: 15px;
+  padding: 3px 7.5px 0 7.5px;
   text-transform: uppercase;
 }
 body main section.bank-section .container .alphabets-search .double .left-alphabet .cont {
@@ -575,6 +609,12 @@ body main section.bank-section .container .alphabets-search .double .left-alphab
 }
 body main section.bank-section .container .alphabets-search .double .left-alphabet .desktop-alphabet {
   margin-bottom: 10px;
+}
+body main section.bank-section .container .alphabets-search .double .left-alphabet .desktop-alphabet .letters a {
+  cursor: pointer;
+}
+body main section.bank-section .container .alphabets-search .double .left-alphabet .desktop-alphabet .letters a:hover {
+  background-color: #eed370;
 }
 body main section.bank-section .container .alphabets-search .double .right-search {
   display: -webkit-box;
@@ -694,6 +734,24 @@ body main section.bank-results .container .result .description {
   padding: 20px 0 20px 20px;
   position: relative;
 }
+body main section.bank-results .container .result .description .like-number {
+  position: absolute;
+  top: 40%;
+  right: 35px;
+  font-size: 19px;
+  color: #798996;
+  font-family: "DejaVuSans";
+}
+@media (max-width: 1200px) {
+  body main section.bank-results .container .result .description .like-number {
+    top: 35%;
+  }
+}
+@media (max-width: 765px) {
+  body main section.bank-results .container .result .description .like-number {
+    font-size: 17px;
+  }
+}
 body main section.bank-results .container .result .description .like {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -736,6 +794,7 @@ body main section.bank-results .container .result .description .spans .author {
   font-family: "DejaVuSans";
   font-size: 18px;
   color: #1d2933;
+  margin-right: 40px;
 }
 body main section.bank-results .container .result .description .spans .date {
   font-family: "BPGVenuri2010";
@@ -861,6 +920,21 @@ body main section.signup-login .container .toggle-form .login {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+body main section.signup-login .container .toggle-form .login .password-input {
+  width: 75%;
+  position: relative;
+}
+body main section.signup-login .container .toggle-form .login .password-input .show-password {
+  position: absolute;
+  right: 20px;
+  top: 45px;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  cursor: pointer;
+}
+body main section.signup-login .container .toggle-form .login .password-input input {
+  width: 100%;
 }
 body main section.signup-login .container .toggle-form .login .remember-psw {
   width: 75%;
@@ -1016,6 +1090,21 @@ body main section.signup-login .container .toggle-form .signup {
       -ms-flex-align: center;
           align-items: center;
 }
+body main section.signup-login .container .toggle-form .signup .password-input {
+  width: 75%;
+  position: relative;
+}
+body main section.signup-login .container .toggle-form .signup .password-input input {
+  width: 100%;
+}
+body main section.signup-login .container .toggle-form .signup .password-input img {
+  position: absolute;
+  right: 20px;
+  top: 47px;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  cursor: pointer;
+}
 body main section.signup-login .container .toggle-form .signup span {
   vertical-align: middle;
   margin-top: 10px;
@@ -1121,6 +1210,12 @@ body main section.signup-login .container .toggle-form .signup .robot-rules .rul
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  min-width: 370px;
+}
+@media (max-width: 545px) {
+  body main section.signup-login .container .toggle-form .signup .robot-rules .rules {
+    min-width: 200px;
+  }
 }
 body main section.signup-login .container .toggle-form .signup .robot-rules .rules #rules {
   margin: 0;
@@ -1131,8 +1226,20 @@ body main section.signup-login .container .toggle-form .signup .robot-rules .rul
 }
 body main section.signup-login .container .toggle-form .signup .robot-rules .rules label a {
   color: #798996;
-  font-size: 18px;
+  font-size: 17px;
   font-family: "DejaVuSans";
+  border-bottom: 1px solid #798996;
+  padding-bottom: 2px;
+}
+@media (max-width: 975px) {
+  body main section.signup-login .container .toggle-form .signup .robot-rules {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
 }
 body main section.signup-login .container .click-recovery {
   display: none;
@@ -2588,7 +2695,7 @@ body footer .container .tablet-responsive {
   opacity: 1 !important;
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1200px) {
   body header {
     padding: 10px 0;
     position: relative;
@@ -2690,7 +2797,10 @@ body footer .container .tablet-responsive {
     width: 20px;
   }
   body main .chatbot {
-    display: none;
+    right: 40px;
+  }
+  body main .chatbot img {
+    width: 80%;
   }
   body main section.profile-section .container {
     width: 90%;
@@ -2885,12 +2995,26 @@ body footer .container .tablet-responsive {
   }
   body main section.bank-section .container .alphabets-search .double .left-alphabet .ge-alphabet img {
     display: block;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  body main section.bank-section .container .alphabets-search .double .left-alphabet .ge-alphabet img:hover {
+    -webkit-transform: scale(2);
+            transform: scale(2);
   }
   body main section.bank-section .container .alphabets-search .double .left-alphabet .ge-alphabet .collect-letters {
     width: 100%;
   }
   body main section.bank-section .container .alphabets-search .double .left-alphabet .en-alphabet img {
     display: block;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  body main section.bank-section .container .alphabets-search .double .left-alphabet .en-alphabet img:hover {
+    -webkit-transform: scale(2);
+            transform: scale(2);
   }
   body main section.bank-section .container .alphabets-search .double .left-alphabet .desktop-alphabet {
     display: none;
@@ -2910,16 +3034,17 @@ body main section.bank-section .container .alphabets-search .double .left-alphab
   }
   body main section.bank-section .container .alphabets-search .double .left-alphabet .cont .mySwiper .swiper-wrapper .swiper-slide,
 body main section.bank-section .container .alphabets-search .double .left-alphabet .cont .mySwiper2 .swiper-wrapper .swiper-slide {
-    margin-right: 0px;
+    padding: 5px 0 2px 0;
     text-align: center;
     font-size: 18px;
     line-height: 20px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  body main section.bank-section .container .alphabets-search .double .left-alphabet .cont .mySwiper .swiper-wrapper .swiper-slide:hover,
+body main section.bank-section .container .alphabets-search .double .left-alphabet .cont .mySwiper2 .swiper-wrapper .swiper-slide:hover {
+    background-color: #eed370;
   }
   body main section.bank-section .container .alphabets-search .double .right-search {
     margin-top: 10px;
@@ -2997,23 +3122,23 @@ body main section.bank-section .container .alphabets-search .double .left-alphab
     height: 30px;
   }
 }
-@media only screen and (max-width: 1300px) and (min-width: 700px) {
+@media only screen and (max-width: 1200px) and (min-width: 700px) {
   body main section.definition-offer .container .definition-header .definition-title h1 {
     font-size: 32px;
   }
 }
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1200px) {
   body main section.definition-offer .container .definition-header .eng-def {
     font-size: 18px;
   }
 }
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1200px) {
   body main section.definition-offer .container .definition-header .ka-def {
     font-size: 18px;
     margin-top: 20px;
   }
 }
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1200px) {
   body main section.definition-offer .container .other-terms .description {
     margin-bottom: 20px;
   }
@@ -3024,7 +3149,7 @@ body main section.bank-section .container .alphabets-search .double .left-alphab
     font-size: 12px;
   }
 }
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1200px) {
   body main section.contact-form .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -3039,7 +3164,7 @@ body main section.bank-section .container .alphabets-search .double .left-alphab
     width: 100%;
   }
 }
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1200px) {
   body footer {
     padding: 30px 0;
   }
@@ -3069,17 +3194,17 @@ body main section.bank-section .container .alphabets-search .double .left-alphab
     margin-left: -30px;
   }
 }
-@media only screen and (max-width: 1300px) and (min-width: 768px) {
+@media only screen and (max-width: 1200px) and (min-width: 768px) {
   body footer .container .middle-block {
     display: none;
   }
 }
-@media only screen and (max-width: 1300px) and (min-width: 768px) {
+@media only screen and (max-width: 1200px) and (min-width: 768px) {
   body footer .container .right-block-partners {
     display: none;
   }
 }
-@media only screen and (max-width: 1300px) and (min-width: 768px) {
+@media only screen and (max-width: 1200px) and (min-width: 768px) {
   body footer .container .tablet-responsive {
     display: block;
   }
@@ -3236,7 +3361,10 @@ body footer .container .tablet-responsive .contact-info p a:visited:hover {
     width: 20px;
   }
   body main .chatbot {
-    display: none;
+    right: 20px;
+  }
+  body main .chatbot img {
+    width: 60%;
   }
   body main section.profile-section .container {
     width: 90%;

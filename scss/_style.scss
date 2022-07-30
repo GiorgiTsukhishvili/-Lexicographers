@@ -160,7 +160,9 @@ body {
           color: $black;
           border: none;
         }
-
+        @media (max-width: 1450px) {
+          margin-left: 30px;
+        }
         a {
           background-color: $btnGray;
           color: $white;
@@ -173,6 +175,30 @@ body {
             color: $black;
             border: none;
           }
+        }
+      }
+
+      .signed-in-profile {
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        font-family: $dejavu;
+        margin-left: 20px;
+
+        &__picture {
+          width: 86px;
+          margin-left: 20px;
+          cursor: pointer;
+        }
+
+        &__text:active,
+        &__text:visited {
+          text-decoration: none;
+          color: inherit;
+        }
+
+        @media (max-width: 1200px) {
+          display: none;
         }
       }
 
@@ -206,6 +232,7 @@ body {
         padding: 22px 29px;
         background: $bgFrom;
         box-shadow: 0px 3px 6px #00000029;
+        z-index: 1;
         ul {
           li {
             margin-top: 31px;
@@ -268,16 +295,17 @@ body {
               padding: 5px 20px;
               background-color: $btnGray;
               cursor: pointer;
-              &:first-child {
-                background-color: $tagsyellow;
-                a {
-                  color: $darkBlue;
-                }
-              }
+
               a {
                 font-family: $venuri;
                 font-size: 16px;
                 color: #f9f7f5;
+              }
+            }
+            .active {
+              background-color: $tagsyellow;
+              a {
+                color: $darkBlue;
               }
             }
           }
@@ -323,10 +351,14 @@ body {
                   }
                 }
               }
-              span {
+              a:link,
+              a:visited {
+                color: inherit;
+                text-decoration: none;
                 font-family: $venuri;
                 font-size: 24px;
-                margin-right: 15px;
+
+                padding: 3px 7.5px 0 7.5px;
                 text-transform: uppercase;
               }
               .cont {
@@ -334,6 +366,16 @@ body {
               }
               .desktop-alphabet {
                 margin-bottom: 10px;
+
+                .letters {
+                  a {
+                    cursor: pointer;
+                  }
+
+                  a:hover {
+                    background-color: $tagsyellow;
+                  }
+                }
               }
             }
             .right-search {
@@ -412,6 +454,24 @@ body {
             margin: 30px 0 60px 0;
             padding: 20px 0 20px 20px;
             position: relative;
+
+            .like-number {
+              position: absolute;
+              top: 40%;
+              right: 35px;
+              font-size: 19px;
+              color: $btnGray;
+              font-family: "DejaVuSans";
+
+              @media (max-width: 1200px) {
+                top: 35%;
+              }
+
+              @media (max-width: 765px) {
+                font-size: 17px;
+              }
+            }
+
             .like {
               @include flex-jc-ai(center, center);
               width: 41px;
@@ -445,6 +505,7 @@ body {
                 font-family: $dejavu;
                 font-size: 18px;
                 color: $darkBlue;
+                margin-right: 40px;
               }
               .date {
                 font-family: $venuri;
@@ -520,6 +581,22 @@ body {
             }
           }
           .login {
+            .password-input {
+              width: 75%;
+              position: relative;
+              .show-password {
+                position: absolute;
+                right: 20px;
+                top: 45px;
+                transform: translateY(50%);
+                cursor: pointer;
+              }
+
+              input {
+                width: 100%;
+              }
+            }
+
             .remember-psw {
               width: 75%;
               margin: 55px 0 45px 0;
@@ -633,6 +710,23 @@ body {
             flex-direction: column;
             justify-content: center;
             align-items: center;
+
+            .password-input {
+              width: 75%;
+              position: relative;
+              input {
+                width: 100%;
+              }
+
+              img {
+                position: absolute;
+                right: 20px;
+                top: 47px;
+                transform: translateY(50%);
+                cursor: pointer;
+              }
+            }
+
             span {
               vertical-align: middle;
               margin-top: 10px;
@@ -700,6 +794,12 @@ body {
               .rules {
                 display: flex;
                 align-items: center;
+                min-width: 370px;
+
+                @media (max-width: 545px) {
+                  min-width: 200px;
+                }
+
                 #rules {
                   margin: 0;
                   padding: 0;
@@ -710,10 +810,17 @@ body {
                 label {
                   a {
                     color: $btnGray;
-                    font-size: 18px;
+                    font-size: 17px;
                     font-family: $dejavu;
+                    border-bottom: 1px solid $btnGray;
+                    padding-bottom: 2px;
                   }
                 }
+              }
+              @media (max-width: 975px) {
+                flex-direction: column;
+                text-align: center;
+                gap: 30px;
               }
             }
           }
@@ -1839,7 +1946,7 @@ body {
 }
 
 // tablet responsive
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1200px) {
   body {
     header {
       padding: 10px 0;
@@ -1934,7 +2041,10 @@ body {
     }
     main {
       .chatbot {
-        display: none;
+        right: 40px;
+        img {
+          width: 80%;
+        }
       }
       section.profile-section {
         .container {
@@ -2161,6 +2271,12 @@ body {
                   justify-content: space-between;
                   img {
                     display: block;
+                    transition: all 0.3s;
+                    cursor: pointer;
+                  }
+
+                  img:hover {
+                    transform: scale(2);
                   }
                   .collect-letters {
                     width: 100%;
@@ -2169,6 +2285,12 @@ body {
                 .en-alphabet {
                   img {
                     display: block;
+                    transition: all 0.3s;
+                    cursor: pointer;
+                  }
+
+                  img:hover {
+                    transform: scale(2);
                   }
                 }
                 .desktop-alphabet {
@@ -2182,12 +2304,15 @@ body {
                     .swiper-wrapper {
                       width: 90%;
                       .swiper-slide {
-                        margin-right: 0px;
+                        padding: 5px 0 2px 0;
+
                         text-align: center;
                         font-size: 18px;
                         line-height: 20px;
-                        display: flex;
                         align-items: center;
+                      }
+                      .swiper-slide:hover {
+                        background-color: $tagsyellow;
                       }
                     }
                   }
@@ -2501,7 +2626,10 @@ body {
     }
     main {
       .chatbot {
-        display: none;
+        right: 20px;
+        img {
+          width: 60%;
+        }
       }
       section.profile-section {
         .container {
