@@ -527,9 +527,11 @@ const profileMenuPicture = document.querySelector(
 
 const hiddenMenu = document.querySelector("#profile-menu");
 
-profileMenuPicture.addEventListener("click", () => {
-  hiddenMenu.classList.remove("hidden");
-});
+if (profileMenuPicture) {
+  profileMenuPicture.addEventListener("click", () => {
+    hiddenMenu.classList.remove("hidden");
+  });
+}
 
 hiddenMenu.addEventListener("click", () => {
   setTimeout(() => hiddenMenu.classList.add("hidden"), 1000);
