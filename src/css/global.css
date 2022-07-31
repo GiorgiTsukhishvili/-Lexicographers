@@ -1657,6 +1657,58 @@ body main section.new-term .container .inputs-container form button:hover {
   background-color: #eed370;
   color: #1d2933;
 }
+body main section.new-term .container .inputs-container form .new-term-select-container {
+  width: 100%;
+  position: relative;
+}
+body main section.new-term .container .inputs-container form .new-term-select-container .new-term-select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 100%;
+  padding: 23px 40px;
+  margin-bottom: 5px;
+  margin-top: 43px;
+  border: 1px solid #798996;
+  border-radius: 8px;
+  color: #798996;
+}
+body main section.new-term .container .inputs-container form .new-term-select-container .selector-arrow,
+body main section.new-term .container .inputs-container form .new-term-select-container .selector-background {
+  font-size: 150%;
+  color: #798996;
+  position: absolute;
+  right: 3%;
+  top: 50%;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+body main section.new-term .container .inputs-container form .new-term-select-container .selector-background {
+  background-color: none;
+  height: 30px;
+  width: 35px;
+  right: 2.8%;
+  top: 52%;
+}
+body main section.new-term .container .inputs-container form .new-term-select-container .selector-arrow {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  background-color: none;
+}
+body main section.new-term .container .inputs-container form .new-term-select-container .new-term-select:focus ~ .selector-arrow {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  color: white;
+}
+body main section.new-term .container .inputs-container form .new-term-select-container .new-term-select:focus ~ .selector-background {
+  background-color: #798996;
+  border: 1px solid #798996;
+}
 body main section.contact-form .container {
   padding: 132px 0px;
   display: -webkit-box;
