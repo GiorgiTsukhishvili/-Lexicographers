@@ -1875,6 +1875,43 @@ body main .error-page .container .error-container .error-text a:hover {
   background-color: #eed370;
   color: #000000;
 }
+body main #menu .hidden {
+  display: none;
+}
+body main .profile-success-message {
+  height: 601px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body main .profile-success-message .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body main .profile-success-message h1 {
+  font-size: 40px;
+  font-family: "BPGVenuri2010";
+  line-height: 45px;
+  color: #1d2933;
+  margin-bottom: 30px;
+}
 body main .profile-section {
   padding: 70px 0 200px 0;
 }

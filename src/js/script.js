@@ -622,3 +622,14 @@ if (document.querySelector(".collect-letters")) {
     .querySelector(".collect-letters")
     .getElementsByTagName("span");
 }
+
+// submiting profile change
+
+const submitChange = document.querySelector(".submit-profile-edit");
+const profileMain = document.querySelector(".profile-section");
+const changeSuccess = document.querySelector(".profile-success-message");
+
+submitChange.addEventListener("click", () => {
+  profileMain.classList.add("hidden");
+  changeSuccess.classList.remove("hidden");
+});
