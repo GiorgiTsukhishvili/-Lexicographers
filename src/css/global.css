@@ -202,6 +202,21 @@ a {
 .logoStyle .main h2:hover {
   color: #eed370;
 }
+@media (max-width: 1450px) {
+  .logoStyle .main {
+    width: 80%;
+  }
+}
+@media (max-width: 1325px) {
+  .logoStyle .main {
+    width: 90%;
+  }
+}
+@media (max-width: 1200px) {
+  .logoStyle .main {
+    width: 100%;
+  }
+}
 
 .logo {
   margin-right: 30px;
