@@ -2273,10 +2273,11 @@ body {
                     display: block;
                     transition: all 0.3s;
                     cursor: pointer;
+                    transform: scale(2);
                   }
 
                   img:hover {
-                    transform: scale(2);
+                    transform: scale(2.5);
                   }
                   .collect-letters {
                     width: 100%;
@@ -2287,10 +2288,11 @@ body {
                     display: block;
                     transition: all 0.3s;
                     cursor: pointer;
+                    transform: scale(2);
                   }
 
                   img:hover {
-                    transform: scale(2);
+                    transform: scale(2.5);
                   }
                 }
                 .desktop-alphabet {
