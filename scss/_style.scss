@@ -1174,6 +1174,56 @@ body {
                 color: $darkBlue;
               }
             }
+            .new-term-select-container {
+              width: 100%;
+              position: relative;
+
+              .new-term-select {
+                appearance: none;
+                width: 100%;
+                padding: 23px 40px;
+                margin-bottom: 5px;
+                margin-top: 43px;
+                border: 1px solid $btnGray;
+                border-radius: 8px;
+                color: $btnGray;
+              }
+
+              .selector-arrow,
+              .selector-background {
+                font-size: 150%;
+                color: $btnGray;
+                position: absolute;
+                right: 3%;
+                top: 50%;
+                display: inline-block;
+                padding: 5px 10px;
+                border-radius: 6px;
+              }
+              .selector-background {
+                background-color: none;
+                height: 30px;
+                width: 35px;
+                right: 2.8%;
+                top: 52%;
+              }
+
+              .selector-arrow {
+                transform: rotate(90deg);
+                transition: transform 0.3s;
+                background-color: none;
+              }
+
+              .new-term-select:focus ~ .selector-arrow {
+                transform: rotate(270deg);
+                color: white;
+              }
+
+              .new-term-select:focus ~ .selector-background {
+                background-color: $btnGray;
+                border: 1px solid $btnGray;
+              }
+            }
           }
         }
       }
@@ -1344,8 +1394,38 @@ body {
 
     // profile page
 
+    #menu {
+      .hidden {
+        display: none;
+      }
+
+      //Profile change success message
+    }
+
+    .profile-success-message {
+      height: 601px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h1 {
+        font-size: 40px;
+        font-family: $venuri;
+        line-height: 45px;
+        color: #1d2933;
+        margin-bottom: 30px;
+      }
+    }
+
     .profile-section {
       padding: 70px 0 200px 0;
+
       .container {
         @include flex-jc-ai(space-between, flex-start);
         .profile-nav {
@@ -1634,6 +1714,7 @@ body {
 
       // end of profile page
     }
+
     // // success page
     section.success-message {
       .container {

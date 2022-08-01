@@ -109,7 +109,23 @@
                 type="text"
                 placeholder="ციტატა, სადაც გამოყენებულია ეს ტერმინი"
               />
-              <input type="text" placeholder="აირჩიე თემა" />
+              <div class="new-term-select-container">
+                <select name="field" class="new-term-select">
+                  <option value="" disabled selected hidden>
+                    აირჩიე სფერო
+                  </option>
+                  <option value="Front-end development">
+                    Front-end development
+                  </option>
+                  <option value="Back-end development">
+                    Back-end development
+                  </option>
+                  <option value="UI/UX design">UI/UX design</option>
+                  <option value="Project managment">Project managment</option>
+                </select>
+                <p class="selector-background"></p>
+                <p class="selector-arrow">&#10095</p>
+              </div>
               <button type="button" id="addNewTerm">დამატება</button>
             </form>
           </div>
