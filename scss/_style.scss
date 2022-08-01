@@ -1385,8 +1385,38 @@ body {
 
     // profile page
 
+    #menu {
+      .hidden {
+        display: none;
+      }
+
+      //Profile change success message
+    }
+
+    .profile-success-message {
+      height: 601px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h1 {
+        font-size: 40px;
+        font-family: $venuri;
+        line-height: 45px;
+        color: #1d2933;
+        margin-bottom: 30px;
+      }
+    }
+
     .profile-section {
       padding: 70px 0 200px 0;
+
       .container {
         @include flex-jc-ai(space-between, flex-start);
         .profile-nav {
@@ -1675,6 +1705,7 @@ body {
 
       // end of profile page
     }
+
     // // success page
     section.success-message {
       .container {
