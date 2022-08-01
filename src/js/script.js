@@ -623,6 +623,7 @@ if (document.querySelector(".collect-letters")) {
     .getElementsByTagName("span");
 }
 
+
 // submiting profile change
 
 const submitChange = document.querySelector(".submit-profile-edit");
@@ -633,3 +634,19 @@ submitChange.addEventListener("click", () => {
   profileMain.classList.add("hidden");
   changeSuccess.classList.remove("hidden");
 });
+
+
+const like = document.querySelectorAll(".like-button");
+
+like.forEach((el) =>
+  el.addEventListener("click", () => {
+    if (el.alt === "like") {
+      el.src = "../../assets/images/like-active.svg";
+      el.alt = "like-active";
+    } else {
+      el.src = "../../assets/images/like-icon.svg";
+      el.alt = "like";
+    }
+  })
+);
+
