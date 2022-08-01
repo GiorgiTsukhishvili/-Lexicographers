@@ -3013,10 +3013,12 @@ body footer .container .tablet-responsive {
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
     cursor: pointer;
-  }
-  body main section.bank-section .container .alphabets-search .double .left-alphabet .ge-alphabet img:hover {
     -webkit-transform: scale(2);
             transform: scale(2);
+  }
+  body main section.bank-section .container .alphabets-search .double .left-alphabet .ge-alphabet img:hover {
+    -webkit-transform: scale(2.5);
+            transform: scale(2.5);
   }
   body main section.bank-section .container .alphabets-search .double .left-alphabet .ge-alphabet .collect-letters {
     width: 100%;
@@ -3026,10 +3028,12 @@ body footer .container .tablet-responsive {
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
     cursor: pointer;
-  }
-  body main section.bank-section .container .alphabets-search .double .left-alphabet .en-alphabet img:hover {
     -webkit-transform: scale(2);
             transform: scale(2);
+  }
+  body main section.bank-section .container .alphabets-search .double .left-alphabet .en-alphabet img:hover {
+    -webkit-transform: scale(2.5);
+            transform: scale(2.5);
   }
   body main section.bank-section .container .alphabets-search .double .left-alphabet .desktop-alphabet {
     display: none;
