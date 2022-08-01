@@ -622,3 +622,19 @@ if (document.querySelector(".collect-letters")) {
     .querySelector(".collect-letters")
     .getElementsByTagName("span");
 }
+
+// Like active changer
+
+const like = document.querySelectorAll(".like-button");
+
+like.forEach((el) =>
+  el.addEventListener("click", () => {
+    if (el.alt === "like") {
+      el.src = "../../assets/images/like-active.svg";
+      el.alt = "like-active";
+    } else {
+      el.src = "../../assets/images/like-icon.svg";
+      el.alt = "like";
+    }
+  })
+);
