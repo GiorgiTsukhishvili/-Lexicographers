@@ -526,6 +526,7 @@ body main section.bank-section .container .alphabets-search .bank-tags {
 body main section.bank-section .container .alphabets-search .bank-tags div {
   margin-right: 15px;
   padding: 5px 20px;
+  margin-top: 8px;
   background-color: #798996;
   cursor: pointer;
 }
@@ -646,13 +647,16 @@ body main section.bank-section .container .alphabets-search .double .right-searc
   border: 1px solid #798996;
   background-color: #fff;
 }
-body main section.bank-section .container .alphabets-search .double .right-search input {
+body main section.bank-section .container .alphabets-search .double .right-search form {
+  width: 100%;
+}
+body main section.bank-section .container .alphabets-search .double .right-search form input {
   width: 100%;
   height: 50px;
   border: none;
   margin-right: 5px;
 }
-body main section.bank-section .container .alphabets-search .double .right-search input:focus-visible {
+body main section.bank-section .container .alphabets-search .double .right-search form input:focus-visible {
   outline: none;
 }
 body main section.bank-section .container .alphabets-search .double .right-search img {

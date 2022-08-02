@@ -40,24 +40,21 @@ const dataMyDefinitions = [
     termin: "LOREM IPSUM 1",
     definition: "ათი შოკოლადი",
     date: "3 კვირის წინ",
+    icon: "fa-solid fa-xmark",
   },
   {
     id: 2,
     termin: "LOREM IPSUM 2",
     definition: "ათი შოკოლადი",
     date: "3 კვირის წინ",
+    icon: "fa-solid fa-check",
   },
   {
     id: 3,
     termin: "LOREM IPSUM 3",
     definition: "ათი შოკოლადი",
     date: "3 კვირის წინ",
-  },
-  {
-    id: 4,
-    termin: "LOREM IPSUM 4",
-    definition: "ათი შოკოლადი",
-    date: "3 კვირის წინ",
+    icon: "fa-regular fa-clock",
   },
 ];
 
@@ -489,7 +486,10 @@ if (document.querySelector("ul.nav-ul")) {
           </div>
           <div class="description">
             <div class="like">
-              <img src="../../assets/images/chat.svg" alt="like" />
+            <i class="${el.icon}" ${
+            (el.icon === "fa-solid fa-xmark" && 'style="color: red"') ||
+            (el.icon === "fa-solid fa-check" && 'style="color: green"')
+          }></i>
             </div>
             <h2>${el.definition}</h2>
             <div class="spans">
@@ -623,18 +623,18 @@ if (document.querySelector(".collect-letters")) {
     .getElementsByTagName("span");
 }
 
-
 // submiting profile change
 
 const submitChange = document.querySelector(".submit-profile-edit");
 const profileMain = document.querySelector(".profile-section");
 const changeSuccess = document.querySelector(".profile-success-message");
 
-submitChange.addEventListener("click", () => {
-  profileMain.classList.add("hidden");
-  changeSuccess.classList.remove("hidden");
-});
-
+if (submitChange) {
+  submitChange.addEventListener("click", () => {
+    profileMain.classList.add("hidden");
+    changeSuccess.classList.remove("hidden");
+  });
+}
 
 const like = document.querySelectorAll(".like-button");
 
@@ -649,4 +649,3 @@ like.forEach((el) =>
     }
   })
 );
-
