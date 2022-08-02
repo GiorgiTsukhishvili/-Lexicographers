@@ -2328,7 +2328,7 @@ body main .profile-section .container .right-inner .my-terms .term .title .socia
           align-items: center;
 }
 body main .profile-section .container .right-inner .my-terms .term .active {
-  height: 141px !important;
+  height: 200px !important;
   overflow: auto !important;
 }
 body main .profile-section .container .right-inner .my-terms .term .definition {
@@ -2352,6 +2352,9 @@ body main .profile-section .container .right-inner .my-terms .term .definition .
   background: #e9e9ed;
   font-family: "DejaVuSans";
   padding: 20px;
+  padding-right: 70px;
+  width: 97%;
+  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2370,6 +2373,7 @@ body main .profile-section .container .right-inner .my-terms .term .definition .
   font-size: 18px;
 }
 body main .profile-section .container .right-inner .my-terms .term .definition .definition-box .like {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2380,9 +2384,29 @@ body main .profile-section .container .right-inner .my-terms .term .definition .
       -ms-flex-align: center;
           align-items: center;
 }
-body main .profile-section .container .right-inner .my-terms .term .definition .definition-box .like span {
+body main .profile-section .container .right-inner .my-terms .term .definition .definition-box .like__img {
+  position: absolute;
+  top: -40px;
+  right: -90px;
+  width: 41px;
+  z-index: 100;
+}
+body main .profile-section .container .right-inner .my-terms .term .definition .definition-box .like__number {
+  font-family: "DejaVuSans";
+  font-size: 12px;
+  color: #798996;
+  position: absolute;
+  top: -30px;
+  right: -30px;
+}
+body main .profile-section .container .right-inner .my-terms .term .definition .definition-box .like__time {
+  font-family: "BPGVenuri2010";
   font-size: 14px;
   color: #798996;
+  position: absolute;
+  top: -10px;
+  right: -30px;
+  width: 90px;
 }
 body main section.success-message .container {
   padding-top: 50px;

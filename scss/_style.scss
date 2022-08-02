@@ -1671,13 +1671,14 @@ body {
               }
               .active {
                 // max-height: fit-content !important;
-                height: 141px !important;
+                height: 200px !important;
                 overflow: auto !important;
               }
               .definition {
                 transition: all 0.2s linear;
                 height: 18px;
                 overflow: hidden;
+
                 &::-webkit-scrollbar {
                   display: none;
                 }
@@ -1693,6 +1694,10 @@ body {
                   background: $terminsGrayBg;
                   font-family: $dejavu;
                   padding: 20px;
+                  padding-right: 70px;
+                  width: 97%;
+                  margin-top: 20px;
+
                   @include flex-jc-ai(space-between, flex-end);
                   .definition-info {
                     h2 {
@@ -1704,10 +1709,33 @@ body {
                     }
                   }
                   .like {
+                    position: relative;
+
                     @include flex-jc-ai(center, center);
-                    span {
+                    &__img {
+                      position: absolute;
+                      top: -40px;
+                      right: -90px;
+                      width: 41px;
+                      z-index: 100;
+                    }
+                    &__number {
+                      font-family: $dejavu;
+                      font-size: 12px;
+                      color: $btnGray;
+                      position: absolute;
+                      top: -30px;
+                      right: -30px;
+                    }
+
+                    &__time {
+                      font-family: $venuri;
                       font-size: 14px;
                       color: $btnGray;
+                      position: absolute;
+                      top: -10px;
+                      right: -30px;
+                      width: 90px;
                     }
                   }
                 }
