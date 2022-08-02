@@ -3836,3 +3836,56 @@ body footer .container .tablet-responsive .contact-info p a:visited:hover {
     height: 33px;
   }
 }
+body .terms-and-condition {
+  width: 1400px;
+  padding-right: 120px;
+  margin: 0 auto;
+}
+body .terms-and-condition__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 145px;
+}
+body .terms-and-condition__header--header {
+  font-size: 50px;
+  font-family: "BPGVenuri2010";
+  color: #1d2933;
+  margin-bottom: 10px;
+  line-height: 67px;
+}
+body .terms-and-condition__header--paragraph {
+  color: #1d2933;
+  text-align: center;
+  max-width: 800px;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "DejaVuSans";
+}
+body .terms-and-condition__section {
+  margin: 150px;
+}
+body .terms-and-condition__section--header {
+  font-family: "DejaVuSans";
+  font-size: 30px;
+  color: #c0d0de;
+  margin-bottom: 30px;
+  line-height: 35px;
+}
+body .terms-and-condition__section--paragraph {
+  font-family: "DejaVuSans";
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  margin-bottom: 20px;
+}
