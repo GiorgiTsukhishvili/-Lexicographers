@@ -2905,6 +2905,7 @@ body footer .container .tablet-responsive {
     width: 20px;
   }
   body main .chatbot {
+    display: none;
     right: 40px;
   }
   body main .chatbot img {
@@ -3473,6 +3474,7 @@ body footer .container .tablet-responsive .contact-info p a:visited:hover {
     width: 20px;
   }
   body main .chatbot {
+    display: none;
     right: 20px;
   }
   body main .chatbot img {
