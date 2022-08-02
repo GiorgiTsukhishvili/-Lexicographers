@@ -40,21 +40,21 @@ const dataMyDefinitions = [
     termin: "LOREM IPSUM 1",
     definition: "ათი შოკოლადი",
     date: "3 კვირის წინ",
-    icon: "fa-solid fa-xmark",
+    icon: "../../assets/images/icon-rejected.svg",
   },
   {
     id: 2,
     termin: "LOREM IPSUM 2",
     definition: "ათი შოკოლადი",
     date: "3 კვირის წინ",
-    icon: "fa-solid fa-check",
+    icon: "../../assets/images/icon-pending.svg",
   },
   {
     id: 3,
     termin: "LOREM IPSUM 3",
     definition: "ათი შოკოლადი",
     date: "3 კვირის წინ",
-    icon: "fa-regular fa-clock",
+    icon: "../../assets/images/icon-accepted.svg",
   },
 ];
 
@@ -471,7 +471,6 @@ if (document.querySelector("ul.nav-ul")) {
         myTerms.classList.toggle("hidden");
       }
       if (index === 1) {
-        console.log("hey");
         dataMyDefinitions.forEach((el) => {
           const postElement = document.createElement("div");
           postElement.classList.add("result");
@@ -486,10 +485,9 @@ if (document.querySelector("ul.nav-ul")) {
           </div>
           <div class="description">
             <div class="like">
-            <i class="${el.icon}" ${
-            (el.icon === "fa-solid fa-xmark" && 'style="color: red"') ||
-            (el.icon === "fa-solid fa-check" && 'style="color: green"')
-          }></i>
+
+            <img src=${el.icon} alt="pending">
+
             </div>
             <h2>${el.definition}</h2>
             <div class="spans">
@@ -649,3 +647,40 @@ like.forEach((el) =>
     }
   })
 );
+
+//adding active effect on profile page
+
+const removeActiveClass = (toAdd, ...element) => {
+  element.forEach((el) => {
+    el.classList.remove("profile-active-sub-nav");
+  });
+  toAdd.classList.add("profile-active-sub-nav");
+};
+
+const activeSub = document.querySelector(".nav-txt-hover-1");
+const activeSub2 = document.querySelector(".nav-txt-hover-2");
+const activeSub3 = document.querySelector(".nav-txt-hover-3");
+const activeSub4 = document.querySelector(".nav-txt-hover-4");
+
+if (activeSub) {
+  activeSub.addEventListener("click", () =>
+    removeActiveClass(activeSub, activeSub2, activeSub4, activeSub3)
+  );
+}
+if (activeSub2) {
+  activeSub2.addEventListener("click", () =>
+    removeActiveClass(activeSub2, activeSub, activeSub4, activeSub3)
+  );
+}
+
+if (activeSub3) {
+  activeSub3.addEventListener("click", () =>
+    removeActiveClass(activeSub3, activeSub2, activeSub4, activeSub)
+  );
+}
+
+if (activeSub4) {
+  activeSub4.addEventListener("click", () =>
+    removeActiveClass(activeSub4, activeSub2, activeSub, activeSub3)
+  );
+}
