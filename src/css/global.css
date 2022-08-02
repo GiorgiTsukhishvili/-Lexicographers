@@ -2406,7 +2406,7 @@ body main section.success-message .container .success-msg div p {
 body main section.definition-offer .container {
   padding: 80px 0;
 }
-body main section.definition-offer .container .definition-header .definition-title {
+body main section.definition-offer .container .definition-header-1 .definition-title {
   padding-bottom: 5px;
   margin-bottom: 18px;
   border-bottom: 1px solid #1d2933;
@@ -2420,12 +2420,12 @@ body main section.definition-offer .container .definition-header .definition-tit
       -ms-flex-align: center;
           align-items: center;
 }
-body main section.definition-offer .container .definition-header .definition-title h1 {
+body main section.definition-offer .container .definition-header-1 .definition-title h1 {
   font-size: 40px;
   font-family: "Quicksand", sans-serif;
   text-transform: uppercase;
 }
-body main section.definition-offer .container .definition-header .definition-title .info {
+body main section.definition-offer .container .definition-header-1 .definition-title .info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2436,17 +2436,17 @@ body main section.definition-offer .container .definition-header .definition-tit
       -ms-flex-align: center;
           align-items: center;
 }
-body main section.definition-offer .container .definition-header .definition-title .info .fb-icon {
+body main section.definition-offer .container .definition-header-1 .definition-title .info .fb-icon {
   margin-left: 35px;
 }
-body main section.definition-offer .container .definition-header p {
+body main section.definition-offer .container .definition-header-1 p {
   color: #798996;
 }
-body main section.definition-offer .container .definition-header .eng-def {
+body main section.definition-offer .container .definition-header-1 .eng-def {
   font-family: "Quicksand", sans-serif;
   margin-bottom: 12px;
 }
-body main section.definition-offer .container .definition-header .ka-def {
+body main section.definition-offer .container .definition-header-1 .ka-def {
   font-family: "DejaVuSans";
   padding-bottom: 20px;
   border-bottom: 1px solid #1d2933;
