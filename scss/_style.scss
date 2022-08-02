@@ -1500,6 +1500,13 @@ body {
                   font-size: 18px;
                 }
               }
+
+              .nav-txt-hover-1:hover,
+              .nav-txt-hover-2:hover,
+              .nav-txt-hover-3:hover,
+              .nav-txt-hover-4:hover {
+                border-bottom: 1px solid #798996;
+              }
             }
           }
         }
