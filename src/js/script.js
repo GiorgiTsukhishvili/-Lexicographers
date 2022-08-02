@@ -40,21 +40,21 @@ const dataMyDefinitions = [
     termin: "LOREM IPSUM 1",
     definition: "ათი შოკოლადი",
     date: "3 კვირის წინ",
-    icon: "fa-solid fa-xmark",
+    icon: "../../assets/images/icon-rejected.svg",
   },
   {
     id: 2,
     termin: "LOREM IPSUM 2",
     definition: "ათი შოკოლადი",
     date: "3 კვირის წინ",
-    icon: "fa-solid fa-check",
+    icon: "../../assets/images/icon-pending.svg",
   },
   {
     id: 3,
     termin: "LOREM IPSUM 3",
     definition: "ათი შოკოლადი",
     date: "3 კვირის წინ",
-    icon: "fa-regular fa-clock",
+    icon: "../../assets/images/icon-accepted.svg",
   },
 ];
 
@@ -485,10 +485,9 @@ if (document.querySelector("ul.nav-ul")) {
           </div>
           <div class="description">
             <div class="like">
-            <i class="${el.icon}" ${
-            (el.icon === "fa-solid fa-xmark" && 'style="color: red"') ||
-            (el.icon === "fa-solid fa-check" && 'style="color: green"')
-          }></i>
+
+            <img src=${el.icon} alt="pending">
+
             </div>
             <h2>${el.definition}</h2>
             <div class="spans">
