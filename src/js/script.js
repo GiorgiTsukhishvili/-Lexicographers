@@ -471,7 +471,6 @@ if (document.querySelector("ul.nav-ul")) {
         myTerms.classList.toggle("hidden");
       }
       if (index === 1) {
-        console.log("hey");
         dataMyDefinitions.forEach((el) => {
           const postElement = document.createElement("div");
           postElement.classList.add("result");
@@ -649,3 +648,40 @@ like.forEach((el) =>
     }
   })
 );
+
+//adding active effect on profile page
+
+const removeActiveClass = (toAdd, ...element) => {
+  element.forEach((el) => {
+    el.classList.remove("profile-active-sub-nav");
+  });
+  toAdd.classList.add("profile-active-sub-nav");
+};
+
+const activeSub = document.querySelector(".nav-txt-hover-1");
+const activeSub2 = document.querySelector(".nav-txt-hover-2");
+const activeSub3 = document.querySelector(".nav-txt-hover-3");
+const activeSub4 = document.querySelector(".nav-txt-hover-4");
+
+if (activeSub) {
+  activeSub.addEventListener("click", () =>
+    removeActiveClass(activeSub, activeSub2, activeSub4, activeSub3)
+  );
+}
+if (activeSub2) {
+  activeSub2.addEventListener("click", () =>
+    removeActiveClass(activeSub2, activeSub, activeSub4, activeSub3)
+  );
+}
+
+if (activeSub3) {
+  activeSub3.addEventListener("click", () =>
+    removeActiveClass(activeSub3, activeSub2, activeSub4, activeSub)
+  );
+}
+
+if (activeSub4) {
+  activeSub4.addEventListener("click", () =>
+    removeActiveClass(activeSub4, activeSub2, activeSub, activeSub3)
+  );
+}
