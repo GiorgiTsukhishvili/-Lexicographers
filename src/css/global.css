@@ -2071,6 +2071,12 @@ body main .profile-section .container .profile-nav .text-nav .nav-ul li a {
   font-family: "DejaVuSans";
   font-size: 18px;
 }
+body main .profile-section .container .profile-nav .text-nav .nav-ul .nav-txt-hover-1:hover,
+body main .profile-section .container .profile-nav .text-nav .nav-ul .nav-txt-hover-2:hover,
+body main .profile-section .container .profile-nav .text-nav .nav-ul .nav-txt-hover-3:hover,
+body main .profile-section .container .profile-nav .text-nav .nav-ul .nav-txt-hover-4:hover {
+  border-bottom: 1px solid #798996;
+}
 body main .profile-section .container .right-inner {
   width: 60%;
 }
