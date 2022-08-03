@@ -2186,10 +2186,33 @@ body main .profile-section .container .right-inner .profile-termins-result .resu
   color: #1d2933;
   margin-bottom: 17px;
 }
+body main .profile-section .container .right-inner .profile-termins-result .result .description .spans {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 body main .profile-section .container .right-inner .profile-termins-result .result .description .spans .date {
   font-family: "BPGVenuri2010";
   font-size: 14px;
   color: #798996;
+}
+body main .profile-section .container .right-inner .profile-termins-result .result .description .spans div {
+  margin-right: 40px;
+}
+body main .profile-section .container .right-inner .profile-termins-result .result .description .spans div .spans-number-like {
+  font-size: 14px;
+  color: #798996;
+  font-family: "DejaVuSans";
+  margin-right: 10px;
+}
+body main .profile-section .container .right-inner .profile-termins-result .result .description .spans div .spans-like-icon {
+  width: 23px;
 }
 body main .profile-section .container .right-inner .profile-edit {
   display: -webkit-box;

@@ -1574,10 +1574,28 @@ body {
                   margin-bottom: 17px;
                 }
                 .spans {
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
                   .date {
                     font-family: $venuri;
                     font-size: 14px;
                     color: $btnGray;
+                  }
+
+                  div {
+                    margin-right: 40px;
+
+                    .spans-number-like {
+                      font-size: 14px;
+                      color: $btnGray;
+                      font-family: $dejavu;
+                      margin-right: 10px;
+                    }
+
+                    .spans-like-icon {
+                      width: 23px;
+                    }
                   }
                 }
               }
