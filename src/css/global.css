@@ -202,6 +202,18 @@ a {
 .logoStyle .main h2:hover {
   color: #eed370;
 }
+@media (max-width: 420px) {
+  .logoStyle .main h2 {
+    margin-left: -20px;
+    width: 70%;
+  }
+}
+@media (max-width: 355px) {
+  .logoStyle .main h2 {
+    margin-left: -20px;
+    width: 80%;
+  }
+}
 @media (max-width: 1450px) {
   .logoStyle .main {
     width: 80%;
@@ -295,6 +307,9 @@ a {
   font-size: 15px;
   font-weight: normal;
   color: #798996;
+}
+#project .container .click-for-authors {
+  display: none;
 }
 
 body {
@@ -1004,6 +1019,18 @@ body main section.signup-login .container .toggle-form .login .remember-psw .che
   margin-bottom: 0;
   margin-top: 0;
 }
+@media (max-width: 565px) {
+  body main section.signup-login .container .toggle-form .login .remember-psw {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+  body main section.signup-login .container .toggle-form .login .remember-psw .rec-text {
+    font-size: 18px !important;
+  }
+}
 body main section.signup-login .container .toggle-form .login input {
   background: none;
   border: #798996 1px solid;
@@ -1074,6 +1101,11 @@ body main section.signup-login .container .toggle-form .login .no-account #not-a
 }
 body main section.signup-login .container .toggle-form .login .no-account #not-account:hover {
   color: #000000;
+}
+@media (max-width: 565px) {
+  body main section.signup-login .container .toggle-form .login .no-account {
+    text-align: center;
+  }
 }
 body main section.signup-login .container .toggle-form .login span {
   vertical-align: middle;
@@ -1256,8 +1288,12 @@ body main section.signup-login .container .toggle-form .signup .robot-rules .rul
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    text-align: center;
+    text-align: start;
     gap: 30px;
+    width: 100%;
+  }
+  body main section.signup-login .container .toggle-form .signup .robot-rules .rules {
+    width: 75%;
   }
 }
 body main section.signup-login .container .click-recovery {
@@ -1409,6 +1445,7 @@ body main section.words .container .word-blocks .block-div {
 }
 body main section.words .container .word-blocks .block-div a {
   font-family: sans-serif;
+  width: 100%;
 }
 body main section.words .container .word-blocks .block-div a h2 {
   color: #798996;
@@ -2213,6 +2250,22 @@ body main .profile-section .container .right-inner .profile-termins-result .resu
 }
 body main .profile-section .container .right-inner .profile-termins-result .result .description .spans div .spans-like-icon {
   width: 23px;
+}
+@media (max-width: 580px) {
+  body main .profile-section .container .right-inner .profile-termins-result .result .termin-tag-social h2 {
+    font-size: 22px;
+  }
+  body main .profile-section .container .right-inner .profile-termins-result .result .description h2 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 480px) {
+  body main .profile-section .container .right-inner .profile-termins-result .result .termin-tag-social h2 {
+    font-size: 18px;
+  }
+  body main .profile-section .container .right-inner .profile-termins-result .result .description h2 {
+    font-size: 16px;
+  }
 }
 body main .profile-section .container .right-inner .profile-edit {
   display: -webkit-box;
@@ -3166,12 +3219,12 @@ body footer .container .tablet-responsive {
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
     cursor: pointer;
-    -webkit-transform: scale(2);
-            transform: scale(2);
-  }
-  body main section.bank-section .container .alphabets-search .double .left-alphabet .ge-alphabet img:hover {
     -webkit-transform: scale(2.5);
             transform: scale(2.5);
+  }
+  body main section.bank-section .container .alphabets-search .double .left-alphabet .ge-alphabet img:hover {
+    -webkit-transform: scale(3);
+            transform: scale(3);
   }
   body main section.bank-section .container .alphabets-search .double .left-alphabet .ge-alphabet .collect-letters {
     width: 100%;
@@ -3181,12 +3234,12 @@ body footer .container .tablet-responsive {
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
     cursor: pointer;
-    -webkit-transform: scale(2);
-            transform: scale(2);
-  }
-  body main section.bank-section .container .alphabets-search .double .left-alphabet .en-alphabet img:hover {
     -webkit-transform: scale(2.5);
             transform: scale(2.5);
+  }
+  body main section.bank-section .container .alphabets-search .double .left-alphabet .en-alphabet img:hover {
+    -webkit-transform: scale(3);
+            transform: scale(3);
   }
   body main section.bank-section .container .alphabets-search .double .left-alphabet .desktop-alphabet {
     display: none;
@@ -3561,6 +3614,17 @@ body footer .container .tablet-responsive .contact-info p a:visited:hover {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  body main section.profile-section .container .profile-nav {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  body main section.profile-section .container .profile-nav .text-nav .user-name {
+    margin: 0 0 15px 0;
+  }
+  body main section.profile-section .container .profile-nav .text-nav .user-name h2 {
+    font-size: 20px;
+  }
   body main section.profile-section .container .profile-nav .user-photo {
     width: 110px;
     height: 110px;
@@ -3577,6 +3641,29 @@ body footer .container .tablet-responsive .contact-info p a:visited:hover {
   body main section.profile-section .container .profile-nav .user-photo .image-upload label img {
     width: 20px;
   }
+}
+@media only screen and (max-width: 767px) and (max-width: 580px) {
+  body main section.profile-section .container .profile-nav .user-photo {
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+  }
+  body main section.profile-section .container .profile-nav .user-photo img {
+    width: 70px;
+  }
+  body main section.profile-section .container .profile-nav .user-photo .image-upload {
+    width: 20px;
+  }
+  body main section.profile-section .container .profile-nav .user-photo .image-upload input {
+    width: 15px;
+  }
+  body main section.profile-section .container .profile-nav .user-photo .image-upload label img {
+    width: 20px;
+    -webkit-transform: translate(20px, 10px);
+            transform: translate(20px, 10px);
+  }
+}
+@media only screen and (max-width: 767px) {
   body main section.new-term .container {
     min-width: 262px;
     width: 90%;
@@ -3590,6 +3677,8 @@ body footer .container .tablet-responsive .contact-info p a:visited:hover {
     font-size: 22px;
     line-height: 25px;
   }
+}
+@media only screen and (max-width: 767px) {
   body main section.about-project-section .container {
     min-width: 262px;
     width: 90%;
@@ -3630,6 +3719,8 @@ body footer .container .tablet-responsive .contact-info p a:visited:hover {
     width: 40%;
     margin-bottom: 25px;
   }
+}
+@media only screen and (max-width: 767px) {
   body main section.partners-section .container {
     min-width: 262px;
     width: 90%;
@@ -3648,6 +3739,8 @@ body footer .container .tablet-responsive .contact-info p a:visited:hover {
     width: 66px;
     height: 66px;
   }
+}
+@media only screen and (max-width: 767px) {
   body main section.poster {
     height: 192px;
     min-width: 320px;
@@ -3673,6 +3766,8 @@ body footer .container .tablet-responsive .contact-info p a:visited:hover {
     font-size: 16px;
     line-height: 18px;
   }
+}
+@media only screen and (max-width: 767px) {
   body main section.words .container {
     min-width: 262px;
     width: 90%;
@@ -3716,6 +3811,8 @@ body footer .container .tablet-responsive .contact-info p a:visited:hover {
     text-transform: capitalize;
     color: #1d2933;
   }
+}
+@media only screen and (max-width: 767px) {
   body main section.about-project {
     margin: 55px 0 35px 0;
   }
@@ -3744,6 +3841,8 @@ body footer .container .tablet-responsive .contact-info p a:visited:hover {
   body main section.about-project .container .image {
     display: none;
   }
+}
+@media only screen and (max-width: 767px) {
   body main section.bank-section .container .alphabets-search .title-bank h2 {
     font-size: 26px;
   }
@@ -3794,6 +3893,8 @@ body footer .container .tablet-responsive .contact-info p a:visited:hover {
   body main section.bank-section .container .alphabets-search .bank-tags div a {
     font-size: 17px;
   }
+}
+@media only screen and (max-width: 767px) {
   body main section.bank-results .container .result .termin-tag-social h2 {
     font-size: 22px;
   }
@@ -3839,6 +3940,8 @@ body footer .container .tablet-responsive .contact-info p a:visited:hover {
     width: 30px;
     height: 30px;
   }
+}
+@media only screen and (max-width: 767px) {
   body main section.definition-offer .container .definition-header .definition-title h1 {
     font-size: 22px;
   }
@@ -3858,12 +3961,16 @@ body footer .container .tablet-responsive .contact-info p a:visited:hover {
   body main section.definition-offer .container .other-terms .description .info .author {
     font-size: 12px;
   }
+}
+@media only screen and (max-width: 767px) {
   body main section.contact-form .container .contact-info h3 {
     font-size: 100%;
   }
   body main section.contact-form .container .contact-info h5 {
     font-size: 80%;
   }
+}
+@media only screen and (max-width: 767px) {
   body footer {
     padding: 20px 0;
   }
@@ -3914,6 +4021,38 @@ body footer .container .tablet-responsive .contact-info p a:visited:hover {
   body footer .container .right-block-partners .partners .partners-logo .div-logo {
     width: 33px;
     height: 33px;
+  }
+}
+@media (max-width: 325px) {
+  body main .third .worked-on-project {
+    gap: 1rem !important;
+    border-left: 2px solid #eed370;
+    margin-left: 15px;
+    padding-left: 10px;
+  }
+  body main .third .worked-on-project h5 {
+    font-size: 22px !important;
+    line-height: 25px;
+    color: #707070;
+    margin-bottom: 0;
+  }
+  body main .third .worked-on-project .inner-cont {
+    border: none !important;
+  }
+  body main .third .worked-on-project .inner-cont h3 {
+    font-size: 15px !important;
+  }
+  body main .third .worked-on-project .inner-cont p {
+    font-size: 12px !important;
+  }
+  body main .third .worked-on-project .click-for-authors {
+    display: inline !important;
+    font-family: "BPGVenuri2010";
+    font-size: 18px;
+    color: #798996;
+    text-decoration: underline;
+    line-height: 22px;
+    cursor: pointer;
   }
 }
 body .terms-and-condition {
