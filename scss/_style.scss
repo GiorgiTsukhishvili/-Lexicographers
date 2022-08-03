@@ -937,7 +937,7 @@ body {
           .block-div {
             max-width: 511px;
             width: 33%;
-            padding: 30px 180px 36px 45px;
+            padding: 30px 45px 36px 45px;
             margin: 35px 0;
             box-shadow: #00000029 0 3px 5px;
             background: $bgFrom;
@@ -945,6 +945,7 @@ body {
             cursor: pointer;
 
             a {
+              font-family: sans-serif;
               h2 {
                 color: #798996;
                 font-size: 46px;
@@ -971,8 +972,8 @@ body {
         .left-block {
           max-width: 768px;
           width: 100%;
+          border-left: 4px solid $tagsyellow;
           .about-project-text {
-            border-left: 4px solid $tagsyellow;
             padding-left: 30px;
 
             h5 {
@@ -1663,7 +1664,7 @@ body {
                   display: flex;
                   align-items: center;
                   h2 {
-                    font-family: "Quicksand", sans-serif;
+                    font-family: sans-serif;
                     text-transform: uppercase;
                     font-size: 40px;
                   }
@@ -1680,6 +1681,9 @@ body {
                 // max-height: fit-content !important;
                 height: 200px !important;
                 overflow: auto !important;
+              }
+              .wrong {
+                height: 20px !important;
               }
               .definition {
                 transition: all 0.2s linear;
@@ -2477,6 +2481,7 @@ body {
             .termin-tag-social {
               h2 {
                 font-size: 25px;
+                font-family: sans-serif;
               }
             }
             .description {
@@ -2505,11 +2510,23 @@ body {
           .pagination {
             justify-content: space-between;
             width: 100%;
+
             .left-arrow {
               display: block;
+              transition: all 0.3s;
+              cursor: pointer;
+            }
+            .left-arrow:hover {
+              transform: scale(1.2);
             }
             .right-arrow {
               display: block;
+              transition: all 0.3s;
+              cursor: pointer;
+            }
+
+            .right-arrow:hover {
+              transform: scale(1.2);
             }
             .page-numbers {
               @include flex-jc-ai(center, center);
@@ -2908,6 +2925,7 @@ body {
               justify-content: center;
               align-items: center;
               margin: 5px 0;
+
               a {
                 text-align: center;
                 h2 {
