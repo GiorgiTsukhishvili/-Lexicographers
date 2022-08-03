@@ -492,7 +492,11 @@ if (document.querySelector("ul.nav-ul")) {
             <h2>${el.definition}</h2>
             <div class="spans">
               <span class="date">${el.date}</span>
-            </div>
+              <div>
+              <span class="spans-number-like">1920</span>
+              <img src="../../assets/images/like-icon-plain.svg" alt="like" class="spans-like-icon"/>
+           </div>
+              </div>
           </div>
           `;
           animationFade(postElement);
