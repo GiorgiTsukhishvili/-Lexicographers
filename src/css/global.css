@@ -1398,7 +1398,7 @@ body main section.words .container .word-blocks {
 body main section.words .container .word-blocks .block-div {
   max-width: 511px;
   width: 33%;
-  padding: 30px 180px 36px 45px;
+  padding: 30px 45px 36px 45px;
   margin: 35px 0;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1607843137) 0 3px 5px;
           box-shadow: rgba(0, 0, 0, 0.1607843137) 0 3px 5px;
@@ -1406,6 +1406,9 @@ body main section.words .container .word-blocks .block-div {
   -webkit-transition: all ease-in-out 0.5s;
   transition: all ease-in-out 0.5s;
   cursor: pointer;
+}
+body main section.words .container .word-blocks .block-div a {
+  font-family: sans-serif;
 }
 body main section.words .container .word-blocks .block-div a h2 {
   color: #798996;
@@ -1441,9 +1444,9 @@ body main section.about-project .container {
 body main section.about-project .container .left-block {
   max-width: 768px;
   width: 100%;
+  border-left: 4px solid #eed370;
 }
 body main section.about-project .container .left-block .about-project-text {
-  border-left: 4px solid #eed370;
   padding-left: 30px;
 }
 body main section.about-project .container .left-block .about-project-text h5 {
@@ -2337,7 +2340,7 @@ body main .profile-section .container .right-inner .my-terms .term .title .term-
           align-items: center;
 }
 body main .profile-section .container .right-inner .my-terms .term .title .term-title h2 {
-  font-family: "Quicksand", sans-serif;
+  font-family: sans-serif;
   text-transform: uppercase;
   font-size: 40px;
 }
@@ -2359,6 +2362,9 @@ body main .profile-section .container .right-inner .my-terms .term .title .socia
 body main .profile-section .container .right-inner .my-terms .term .active {
   height: 200px !important;
   overflow: auto !important;
+}
+body main .profile-section .container .right-inner .my-terms .term .wrong {
+  height: 20px !important;
 }
 body main .profile-section .container .right-inner .my-terms .term .definition {
   -webkit-transition: all 0.2s linear;
@@ -3236,6 +3242,7 @@ body main section.bank-section .container .alphabets-search .double .left-alphab
   }
   body main section.bank-results .container .result .termin-tag-social h2 {
     font-size: 25px;
+    font-family: sans-serif;
   }
   body main section.bank-results .container .result .description h2 {
     font-size: 20px;
@@ -3267,9 +3274,23 @@ body main section.bank-section .container .alphabets-search .double .left-alphab
   }
   body main section.bank-results .container .pagination .left-arrow {
     display: block;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  body main section.bank-results .container .pagination .left-arrow:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
   body main section.bank-results .container .pagination .right-arrow {
     display: block;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  body main section.bank-results .container .pagination .right-arrow:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
   body main section.bank-results .container .pagination .page-numbers {
     display: -webkit-box;
