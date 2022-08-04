@@ -688,3 +688,19 @@ if (activeSub4) {
     removeActiveClass(activeSub4, activeSub2, activeSub, activeSub3)
   );
 }
+
+//showing more authors
+
+const authors = document.querySelector(".click-for-authors");
+const moreAuthors = document.querySelector(".more-people");
+
+if (authors) {
+  authors.addEventListener("click", (e) => {
+    moreAuthors.classList.toggle("hidden");
+    if (authors.innerHTML === "წაიკითხეთ სრულად") {
+      authors.innerHTML = "შეამცირეთ ტექსტი";
+    } else {
+      authors.innerHTML = "წაიკითხეთ სრულად";
+    }
+  });
+}

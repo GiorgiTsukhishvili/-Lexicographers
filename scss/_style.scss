@@ -36,6 +36,14 @@
       &:hover {
         color: $tagsyellow;
       }
+      @media (max-width: 420px) {
+        margin-left: -20px;
+        width: 70%;
+      }
+      @media (max-width: 355px) {
+        margin-left: -20px;
+        width: 80%;
+      }
     }
     @media (max-width: 1450px) {
       width: 80%;
@@ -109,6 +117,9 @@
         font-weight: normal;
         color: #798996;
       }
+    }
+    .click-for-authors {
+      display: none;
     }
   }
 }
@@ -647,6 +658,13 @@ body {
                 }
               }
               @include flex-jc(space-between);
+              @media (max-width: 565px) {
+                flex-direction: column;
+                gap: 30px;
+                .rec-text {
+                  font-size: 18px !important;
+                }
+              }
             }
             padding: 0 0 50px 0;
             display: flex;
@@ -701,6 +719,9 @@ body {
                 &:hover {
                   color: $black;
                 }
+              }
+              @media (max-width: 565px) {
+                text-align: center;
               }
             }
             span {
@@ -833,8 +854,13 @@ body {
               }
               @media (max-width: 975px) {
                 flex-direction: column;
-                text-align: center;
+                text-align: start;
                 gap: 30px;
+
+                width: 100%;
+                .rules {
+                  width: 75%;
+                }
               }
             }
           }
@@ -946,6 +972,7 @@ body {
 
             a {
               font-family: sans-serif;
+              width: 100%;
               h2 {
                 color: #798996;
                 font-size: 46px;
@@ -1596,6 +1623,35 @@ body {
                     .spans-like-icon {
                       width: 23px;
                     }
+                  }
+                }
+              }
+            }
+            @media (max-width: 580px) {
+              .result {
+                .termin-tag-social {
+                  h2 {
+                    font-size: 22px;
+                  }
+                }
+                .description {
+                  h2 {
+                    font-size: 20px;
+                  }
+                }
+              }
+            }
+
+            @media (max-width: 480px) {
+              .result {
+                .termin-tag-social {
+                  h2 {
+                    font-size: 18px;
+                  }
+                }
+                .description {
+                  h2 {
+                    font-size: 16px;
                   }
                 }
               }
@@ -2426,11 +2482,11 @@ body {
                     display: block;
                     transition: all 0.3s;
                     cursor: pointer;
-                    transform: scale(2);
+                    transform: scale(2.5);
                   }
 
                   img:hover {
-                    transform: scale(2.5);
+                    transform: scale(3);
                   }
                   .collect-letters {
                     width: 100%;
@@ -2441,11 +2497,11 @@ body {
                     display: block;
                     transition: all 0.3s;
                     cursor: pointer;
-                    transform: scale(2);
+                    transform: scale(2.5);
                   }
 
                   img:hover {
-                    transform: scale(2.5);
+                    transform: scale(3);
                   }
                 }
                 .desktop-alphabet {
@@ -2806,9 +2862,20 @@ body {
           margin: 0 auto;
           justify-content: space-between;
           .profile-nav {
+            align-items: flex-start;
+
+            .text-nav {
+              .user-name {
+                margin: 0 0 15px 0;
+                h2 {
+                  font-size: 20px;
+                }
+              }
+            }
             .user-photo {
               width: 110px;
               height: 110px;
+
               img {
                 width: 110px;
               }
@@ -2820,6 +2887,27 @@ body {
                 label {
                   img {
                     width: 20px;
+                  }
+                }
+              }
+
+              @media (max-width: 580px) {
+                width: 70px;
+                height: 70px;
+                margin-right: 20px;
+                img {
+                  width: 70px;
+                }
+                .image-upload {
+                  width: 20px;
+                  input {
+                    width: 15px;
+                  }
+                  label {
+                    img {
+                      width: 20px;
+                      transform: translate(20px, 10px);
+                    }
                   }
                 }
               }
@@ -3203,6 +3291,46 @@ body {
                 height: 33px;
               }
             }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 325px) {
+  body {
+    main {
+      .third {
+        .worked-on-project {
+          gap: 1rem !important;
+          border-left: 2px solid $tagsyellow;
+          margin-left: 15px;
+          padding-left: 10px;
+          h5 {
+            font-size: 22px !important;
+            line-height: 25px;
+            color: #707070;
+            margin-bottom: 0;
+          }
+          .inner-cont {
+            h3 {
+              font-size: 15px !important;
+            }
+
+            p {
+              font-size: 12px !important;
+            }
+            border: none !important;
+          }
+          .click-for-authors {
+            display: inline !important;
+            font-family: "BPGVenuri2010";
+            font-size: 18px;
+            color: #798996;
+            text-decoration: underline;
+            line-height: 22px;
+            cursor: pointer;
           }
         }
       }
