@@ -40,24 +40,21 @@ const dataMyDefinitions = [
     termin: "LOREM IPSUM 1",
     definition: "ათი შოკოლადი",
     date: "3 კვირის წინ",
+    icon: "../../assets/images/icon-rejected.svg",
   },
   {
     id: 2,
     termin: "LOREM IPSUM 2",
     definition: "ათი შოკოლადი",
     date: "3 კვირის წინ",
+    icon: "../../assets/images/icon-pending.svg",
   },
   {
     id: 3,
     termin: "LOREM IPSUM 3",
     definition: "ათი შოკოლადი",
     date: "3 კვირის წინ",
-  },
-  {
-    id: 4,
-    termin: "LOREM IPSUM 4",
-    definition: "ათი შოკოლადი",
-    date: "3 კვირის წინ",
+    icon: "../../assets/images/icon-accepted.svg",
   },
 ];
 
@@ -474,7 +471,6 @@ if (document.querySelector("ul.nav-ul")) {
         myTerms.classList.toggle("hidden");
       }
       if (index === 1) {
-        console.log("hey");
         dataMyDefinitions.forEach((el) => {
           const postElement = document.createElement("div");
           postElement.classList.add("result");
@@ -489,12 +485,18 @@ if (document.querySelector("ul.nav-ul")) {
           </div>
           <div class="description">
             <div class="like">
-              <img src="../../assets/images/chat.svg" alt="like" />
+
+            <img src=${el.icon} alt="pending">
+
             </div>
             <h2>${el.definition}</h2>
             <div class="spans">
               <span class="date">${el.date}</span>
-            </div>
+              <div>
+              <span class="spans-number-like">1920</span>
+              <img src="../../assets/images/like-icon-plain.svg" alt="like" class="spans-like-icon"/>
+           </div>
+              </div>
           </div>
           `;
           animationFade(postElement);
@@ -621,4 +623,84 @@ if (document.querySelector(".collect-letters")) {
   const letter = document
     .querySelector(".collect-letters")
     .getElementsByTagName("span");
+}
+
+// submiting profile change
+
+const submitChange = document.querySelector(".submit-profile-edit");
+const profileMain = document.querySelector(".profile-section");
+const changeSuccess = document.querySelector(".profile-success-message");
+
+if (submitChange) {
+  submitChange.addEventListener("click", () => {
+    profileMain.classList.add("hidden");
+    changeSuccess.classList.remove("hidden");
+  });
+}
+
+const like = document.querySelectorAll(".like-button");
+
+like.forEach((el) =>
+  el.addEventListener("click", () => {
+    if (el.alt === "like") {
+      el.src = "../../assets/images/like-active.svg";
+      el.alt = "like-active";
+    } else {
+      el.src = "../../assets/images/like-icon.svg";
+      el.alt = "like";
+    }
+  })
+);
+
+//adding active effect on profile page
+
+const removeActiveClass = (toAdd, ...element) => {
+  element.forEach((el) => {
+    el.classList.remove("profile-active-sub-nav");
+  });
+  toAdd.classList.add("profile-active-sub-nav");
+};
+
+const activeSub = document.querySelector(".nav-txt-hover-1");
+const activeSub2 = document.querySelector(".nav-txt-hover-2");
+const activeSub3 = document.querySelector(".nav-txt-hover-3");
+const activeSub4 = document.querySelector(".nav-txt-hover-4");
+
+if (activeSub) {
+  activeSub.addEventListener("click", () =>
+    removeActiveClass(activeSub, activeSub2, activeSub4, activeSub3)
+  );
+}
+if (activeSub2) {
+  activeSub2.addEventListener("click", () =>
+    removeActiveClass(activeSub2, activeSub, activeSub4, activeSub3)
+  );
+}
+
+if (activeSub3) {
+  activeSub3.addEventListener("click", () =>
+    removeActiveClass(activeSub3, activeSub2, activeSub4, activeSub)
+  );
+}
+
+if (activeSub4) {
+  activeSub4.addEventListener("click", () =>
+    removeActiveClass(activeSub4, activeSub2, activeSub, activeSub3)
+  );
+}
+
+//showing more authors
+
+const authors = document.querySelector(".click-for-authors");
+const moreAuthors = document.querySelector(".more-people");
+
+if (authors) {
+  authors.addEventListener("click", (e) => {
+    moreAuthors.classList.toggle("hidden");
+    if (authors.innerHTML === "წაიკითხეთ სრულად") {
+      authors.innerHTML = "შეამცირეთ ტექსტი";
+    } else {
+      authors.innerHTML = "წაიკითხეთ სრულად";
+    }
+  });
 }

@@ -4,6 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+    <meta name="description" content="შექმენი ქართული ტერმინი, შემოუერთდი ტერმინების კონკურსს!"/>
+    <meta property="og:type" content="website" />
+    <!-- <meta property="og:url" content="" /> -->
+    <meta property="og:title" content="შემოგვთავაზე შენი ტერმინი" />
+    <meta property="og:description" content="შექმენი ქართული ტერმინი, შემოუერთდი ტერმინების კონკურსს!" />
+    <meta property="og:image" content="../../assets/images/sharing-image.JPG" />
+
+    
+   
     <!-- icon -->
     <link rel="icon" type="image/x-icon" href="../../assets/images/logo.svg" />
     <!-- Font Awesome -->
@@ -109,7 +119,23 @@
                 type="text"
                 placeholder="ციტატა, სადაც გამოყენებულია ეს ტერმინი"
               />
-              <input type="text" placeholder="აირჩიე თემა" />
+              <div class="new-term-select-container">
+                <select name="field" class="new-term-select">
+                  <option value="" disabled selected hidden>
+                    აირჩიე სფერო
+                  </option>
+                  <option value="Front-end development">
+                    Front-end development
+                  </option>
+                  <option value="Back-end development">
+                    Back-end development
+                  </option>
+                  <option value="UI/UX design">UI/UX design</option>
+                  <option value="Project managment">Project managment</option>
+                </select>
+                <p class="selector-background"></p>
+                <p class="selector-arrow">&#10095</p>
+              </div>
               <button type="button" id="addNewTerm">დამატება</button>
             </form>
           </div>
@@ -142,7 +168,9 @@
         <div class="middle-block">
           <div class="contact-info">
             <p><a href="./contact.html">საკონტაქტო ინფორმაცია</a></p>
-            <p>გამოყენების წესები</p>
+            <p><a href="./terms_and_condition.html"
+                >გამოყენების წესები</a
+              ></p>
           </div>
         </div>
         <div class="right-block-partners">
@@ -158,7 +186,9 @@
         <div class="tablet-responsive">
           <div class="contact-info">
             <p><a href="./contact.html">საკონტაქტო ინფორმაცია</a></p>
-            <p>გამოყენების წესები</p>
+            <p><a href="./terms_and_condition.html"
+                >გამოყენების წესები</a
+              ></p>
             <div class="partners-logo">
               <div class="div-logo"></div>
               <div class="div-logo"></div>
