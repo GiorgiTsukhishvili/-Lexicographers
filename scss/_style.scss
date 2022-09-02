@@ -3307,15 +3307,18 @@ body {
   }
 }
 
-@media (max-width: 325px) {
+@media (max-width: 768px) {
   body {
     main {
       .third {
+        max-width: 650px;
+
         .worked-on-project {
           gap: 1rem !important;
           border-left: 2px solid $tagsyellow;
-          margin-left: 15px;
+          margin-left: 25px;
           padding-left: 10px;
+          max-width: 412px;
           h5 {
             font-size: 22px !important;
             line-height: 25px;
