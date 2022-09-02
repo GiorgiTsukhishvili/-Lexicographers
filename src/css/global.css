@@ -2156,6 +2156,16 @@ body main .profile-section .container .right-inner .profile-termins-result .resu
       -ms-flex-align: center;
           align-items: center;
 }
+body main .profile-section .container .right-inner .profile-termins-result .result .termin-tag-social h1 {
+  margin-right: 20px;
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #1d2933;
+  background-color: #eed370;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 6px 20px;
+}
 body main .profile-section .container .right-inner .profile-termins-result .result .termin-tag-social .tagandsocial {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2387,6 +2397,25 @@ body main .profile-section .container .right-inner .my-terms .term .title {
           align-items: center;
   border-bottom: 1px solid #1d2933;
   margin-bottom: 16px;
+}
+body main .profile-section .container .right-inner .my-terms .term .title .terms-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body main .profile-section .container .right-inner .my-terms .term .title .terms-left h1 {
+  margin-right: 20px;
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #1d2933;
+  background-color: #eed370;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 6px 20px;
 }
 body main .profile-section .container .right-inner .my-terms .term .title .term-title {
   display: -webkit-box;
