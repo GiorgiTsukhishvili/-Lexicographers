@@ -1990,7 +1990,8 @@ body main .error-page .container .error-container .error-text a:hover {
 body main #menu .hidden {
   display: none;
 }
-body main .profile-success-message {
+body main .profile-success-message,
+body main .recovery-password-success {
   height: 601px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2002,7 +2003,8 @@ body main .profile-success-message {
       -ms-flex-align: center;
           align-items: center;
 }
-body main .profile-success-message .container {
+body main .profile-success-message .container,
+body main .recovery-password-success .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2017,7 +2019,8 @@ body main .profile-success-message .container {
       -ms-flex-align: center;
           align-items: center;
 }
-body main .profile-success-message h1 {
+body main .profile-success-message h1,
+body main .recovery-password-success h1 {
   font-size: 40px;
   font-family: "BPGVenuri2010";
   line-height: 45px;
