@@ -1436,7 +1436,8 @@ body {
       //Profile change success message
     }
 
-    .profile-success-message {
+    .profile-success-message,
+    .recovery-password-success {
       height: 601px;
       display: flex;
       justify-content: center;
