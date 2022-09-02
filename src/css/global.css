@@ -1540,6 +1540,7 @@ body main .chatbot {
   position: fixed;
   bottom: 70px;
   right: 50px;
+  display: none;
 }
 body main section.about-project-section .container .first {
   margin-top: 70px;
@@ -2396,6 +2397,16 @@ body main .profile-section .container .right-inner .my-terms .term .title .term-
   font-family: sans-serif;
   text-transform: uppercase;
   font-size: 40px;
+}
+@media (max-width: 420px) {
+  body main .profile-section .container .right-inner .my-terms .term .title .term-title h2 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 360px) {
+  body main .profile-section .container .right-inner .my-terms .term .title .term-title h2 {
+    font-size: 26px;
+  }
 }
 body main .profile-section .container .right-inner .my-terms .term .title .social-fb {
   background: #798996;
