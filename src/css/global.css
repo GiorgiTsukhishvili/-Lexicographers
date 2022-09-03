@@ -1540,6 +1540,7 @@ body main .chatbot {
   position: fixed;
   bottom: 70px;
   right: 50px;
+  display: none;
 }
 body main section.about-project-section .container .first {
   margin-top: 70px;
@@ -1989,7 +1990,8 @@ body main .error-page .container .error-container .error-text a:hover {
 body main #menu .hidden {
   display: none;
 }
-body main .profile-success-message {
+body main .profile-success-message,
+body main .recovery-password-success {
   height: 601px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2001,7 +2003,8 @@ body main .profile-success-message {
       -ms-flex-align: center;
           align-items: center;
 }
-body main .profile-success-message .container {
+body main .profile-success-message .container,
+body main .recovery-password-success .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2016,7 +2019,8 @@ body main .profile-success-message .container {
       -ms-flex-align: center;
           align-items: center;
 }
-body main .profile-success-message h1 {
+body main .profile-success-message h1,
+body main .recovery-password-success h1 {
   font-size: 40px;
   font-family: "BPGVenuri2010";
   line-height: 45px;
@@ -2151,6 +2155,16 @@ body main .profile-section .container .right-inner .profile-termins-result .resu
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+body main .profile-section .container .right-inner .profile-termins-result .result .termin-tag-social h1 {
+  margin-right: 20px;
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #1d2933;
+  background-color: #eed370;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 6px 20px;
 }
 body main .profile-section .container .right-inner .profile-termins-result .result .termin-tag-social .tagandsocial {
   display: -webkit-box;
@@ -2384,6 +2398,25 @@ body main .profile-section .container .right-inner .my-terms .term .title {
   border-bottom: 1px solid #1d2933;
   margin-bottom: 16px;
 }
+body main .profile-section .container .right-inner .my-terms .term .title .terms-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body main .profile-section .container .right-inner .my-terms .term .title .terms-left h1 {
+  margin-right: 20px;
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #1d2933;
+  background-color: #eed370;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 6px 20px;
+}
 body main .profile-section .container .right-inner .my-terms .term .title .term-title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2396,6 +2429,16 @@ body main .profile-section .container .right-inner .my-terms .term .title .term-
   font-family: sans-serif;
   text-transform: uppercase;
   font-size: 40px;
+}
+@media (max-width: 420px) {
+  body main .profile-section .container .right-inner .my-terms .term .title .term-title h2 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 360px) {
+  body main .profile-section .container .right-inner .my-terms .term .title .term-title h2 {
+    font-size: 26px;
+  }
 }
 body main .profile-section .container .right-inner .my-terms .term .title .social-fb {
   background: #798996;
@@ -4023,12 +4066,16 @@ body footer .container .tablet-responsive .contact-info p a:visited:hover {
     height: 33px;
   }
 }
-@media (max-width: 325px) {
+@media (max-width: 768px) {
+  body main .third {
+    max-width: 650px;
+  }
   body main .third .worked-on-project {
     gap: 1rem !important;
     border-left: 2px solid #eed370;
-    margin-left: 15px;
+    margin-left: 25px;
     padding-left: 10px;
+    max-width: 412px;
   }
   body main .third .worked-on-project h5 {
     font-size: 22px !important;
@@ -4095,9 +4142,9 @@ body .terms-and-condition__section {
   margin: 150px;
 }
 body .terms-and-condition__section--header {
-  font-family: "DejaVuSans";
+  font-family: "BPGVenuri2010";
   font-size: 30px;
-  color: #c0d0de;
+  color: #1d2933;
   margin-bottom: 30px;
   line-height: 35px;
 }

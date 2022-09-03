@@ -451,6 +451,7 @@ body {
             width: 100%;
             border-bottom: 1px solid $darkBlue;
             padding-bottom: 7px;
+
             .tagandsocial {
               @include flex-jc-ai(flex-end, center);
               .termintag {
@@ -1056,6 +1057,7 @@ body {
       position: fixed;
       bottom: 70px;
       right: 50px;
+      display: none;
     }
 
     // Second page ----- about project
@@ -1435,7 +1437,8 @@ body {
       //Profile change success message
     }
 
-    .profile-success-message {
+    .profile-success-message,
+    .recovery-password-success {
       height: 601px;
       display: flex;
       justify-content: center;
@@ -1553,6 +1556,17 @@ body {
                 width: 100%;
                 border-bottom: 1px solid $darkBlue;
                 padding-bottom: 7px;
+
+                & h1 {
+                  margin-right: 20px;
+                  font-family: sans-serif;
+                  font-size: 16px;
+                  color: $darkBlue;
+                  background-color: $tagsyellow;
+                  font-weight: 500;
+                  line-height: 20px;
+                  padding: 6px 20px;
+                }
                 .tagandsocial {
                   @include flex-jc-ai(flex-end, center);
                   .fb-icon {
@@ -1734,6 +1748,24 @@ body {
                 @include flex-jc-ai(space-between, center);
                 border-bottom: 1px solid $darkBlue;
                 margin-bottom: 16px;
+
+                .terms-left {
+                  display: flex;
+                  gap: 20px;
+                  align-items: center;
+
+                  & h1 {
+                    margin-right: 20px;
+                    font-family: sans-serif;
+                    font-size: 16px;
+                    color: $darkBlue;
+                    background-color: $tagsyellow;
+                    font-weight: 500;
+                    line-height: 20px;
+                    padding: 6px 20px;
+                  }
+                }
+
                 .term-title {
                   display: flex;
                   align-items: center;
@@ -1741,6 +1773,13 @@ body {
                     font-family: sans-serif;
                     text-transform: uppercase;
                     font-size: 40px;
+                    @media (max-width: 420px) {
+                      font-size: 32px;
+                    }
+
+                    @media (max-width: 360px) {
+                      font-size: 26px;
+                    }
                   }
                 }
                 .social-fb {
@@ -3298,15 +3337,18 @@ body {
   }
 }
 
-@media (max-width: 325px) {
+@media (max-width: 768px) {
   body {
     main {
       .third {
+        max-width: 650px;
+
         .worked-on-project {
           gap: 1rem !important;
           border-left: 2px solid $tagsyellow;
-          margin-left: 15px;
+          margin-left: 25px;
           padding-left: 10px;
+          max-width: 412px;
           h5 {
             font-size: 22px !important;
             line-height: 25px;

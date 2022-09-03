@@ -353,6 +353,10 @@ if (registrationBtn) {
 
 //------------- recovery password validation--------------//
 const recoveryButton = document.querySelector(".submit-recovery");
+const recoverySuccess = document.querySelector(".recovery-password-success");
+const recPassForm = document.querySelector(".recovery-password");
+const recoveryParag = document.querySelector(".recovery-title");
+const recoveryForm = document.querySelector(".password-form");
 if (recoveryButton) {
   recoveryButton.addEventListener("click", () => {
     const recoverPass = document.querySelector(".psw-recovery");
@@ -391,13 +395,15 @@ if (recoveryButton) {
       recoverPass.nextSibling.nextSibling.classList.contains("hidden") &&
       recoveryPassRpt.nextSibling.nextSibling.classList.contains("hidden")
     ) {
-      recoveryButton.onclick = location.href = "profile.html";
+      recoverySuccess.classList.remove("hidden");
+      recoveryForm.classList.add("hidden");
+      recoveryParag.classList.add("hidden");
     }
   });
 }
 // click text "პაროლის აღდგენა"
 const tglFrom = document.querySelector(".toggle-form");
-const recPassForm = document.querySelector(".recovery-password");
+
 function showRecPass() {
   tglFrom.classList.add("click-recovery");
   recPassForm.classList.add("show-recovery-form");
@@ -478,6 +484,7 @@ if (document.querySelector("ul.nav-ul")) {
           <div class="termin-tag-social">
             <h2>${el.termin}</h2>
             <div class="tagandsocial">
+            <h1>Front-End</h1>
               <div class="fb-icon">
                 <img src="../../assets/images/fb.svg" alt="fb" />
               </div>
