@@ -1536,6 +1536,15 @@ body main section.about-project .container a .btn-your-term p {
   font-size: 18px;
   color: #ffffff;
 }
+body main section.about-project .container .image img {
+  width: 100%;
+}
+@media (max-width: 1500px) {
+  body main section.about-project .container .image img {
+    margin-left: 40px;
+    padding-right: 40px;
+  }
+}
 body main .chatbot {
   position: fixed;
   bottom: 70px;
@@ -1591,6 +1600,11 @@ body main section.about-project-section .container .project .text .more-click:ho
 }
 body main section.about-project-section .container .project .show-more .texts .more-texts {
   display: inline;
+}
+@media (max-width: 1500px) {
+  body main section.about-project-section img {
+    width: 30%;
+  }
 }
 body main section.partners-section .container .organisation-partenrs {
   margin-bottom: 114px;
@@ -3237,9 +3251,6 @@ body footer .container .tablet-responsive {
   body main section.about-project .container .left-block a .btn-your-term p {
     font-size: 14px;
   }
-  body main section.about-project .container .image img {
-    width: 300px;
-  }
   body main section.bank-section .container .alphabets-search .title-bank h2 {
     font-size: 26px;
   }
@@ -3630,6 +3641,8 @@ body footer .container .tablet-responsive .contact-info p a:visited:hover {
     display: block;
     border: none;
     color: #1d2933;
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
   }
   body header .container nav {
     display: none;
@@ -4100,6 +4113,21 @@ body footer .container .tablet-responsive .contact-info p a:visited:hover {
     text-decoration: underline;
     line-height: 22px;
     cursor: pointer;
+  }
+}
+@media (max-width: 400px) {
+  body header .container .logoStyle {
+    width: 250px;
+  }
+  body header .container .logoStyle .main {
+    width: 100%;
+    padding: 0;
+  }
+  body header .container .logoStyle .main h2 {
+    font-size: 17px;
+  }
+  body header .container .logoStyle .main .logo img {
+    width: 20px;
   }
 }
 body .terms-and-condition {
