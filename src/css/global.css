@@ -2042,6 +2042,24 @@ body main .recovery-password-success h1 {
   color: #1d2933;
   margin-bottom: 30px;
 }
+@media (max-width: 768px) {
+  body main .recovery-password-success .container h1 {
+    font-size: 25px;
+    line-height: 29px;
+  }
+  body main .recovery-password-success .container img {
+    width: 108px;
+  }
+}
+@media (max-width: 320px) {
+  body main .recovery-password-success .container h1 {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  body main .recovery-password-success .container img {
+    width: 45px;
+  }
+}
 body main .profile-section {
   padding: 70px 0 200px 0;
 }
@@ -2572,6 +2590,28 @@ body main section.success-message .container .success-msg div p {
   line-height: 45px;
   color: #1d2933;
   margin-bottom: 30px;
+}
+@media (max-width: 768px) {
+  body main section.success-message .container .success-msg div p {
+    font-size: 25px;
+    line-height: 33px;
+  }
+}
+@media (max-width: 320px) {
+  body main section.success-message .container .success-msg div p {
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
+@media (max-width: 768px) {
+  body main section.success-message .container .success-msg div img {
+    width: 108px;
+  }
+}
+@media (max-width: 768px) {
+  body main section.success-message .container .success-msg div img {
+    width: 45px;
+  }
 }
 body main section.definition-offer .container {
   padding: 80px 0;
