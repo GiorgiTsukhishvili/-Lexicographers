@@ -1757,6 +1757,7 @@ body main section.new-term .container .inputs-container form .new-term-select-co
   display: inline-block;
   padding: 5px 10px;
   border-radius: 6px;
+  pointer-events: none;
 }
 body main section.new-term .container .inputs-container form .new-term-select-container .selector-background {
   background-color: none;
@@ -1775,8 +1776,8 @@ body main section.new-term .container .inputs-container form .new-term-select-co
   background-color: none;
 }
 body main section.new-term .container .inputs-container form .new-term-select-container .new-term-select:focus ~ .selector-arrow {
-  -webkit-transform: rotate(270deg);
-          transform: rotate(270deg);
+  -webkit-transform: rotate(270deg) translateY(2px);
+          transform: rotate(270deg) translateY(2px);
   color: white;
 }
 body main section.new-term .container .inputs-container form .new-term-select-container .new-term-select:focus ~ .selector-background {

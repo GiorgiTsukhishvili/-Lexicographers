@@ -1252,6 +1252,7 @@ body {
                 display: inline-block;
                 padding: 5px 10px;
                 border-radius: 6px;
+                pointer-events: none;
               }
               .selector-background {
                 background-color: none;
@@ -1268,7 +1269,8 @@ body {
               }
 
               .new-term-select:focus ~ .selector-arrow {
-                transform: rotate(270deg);
+                transform: rotate(270deg) translateY(2px);
+
                 color: white;
               }
 
