@@ -472,6 +472,10 @@ body {
               font-size: 40px;
               color: $darkBlue;
               text-transform: uppercase;
+
+              @media (max-width: 1400px) {
+                font-size: 30px;
+              }
             }
             @include flex-jc-ai(space-between, center);
           }
@@ -526,6 +530,10 @@ body {
               font-size: 40px;
               color: $darkBlue;
               margin-bottom: 12px;
+
+              @media (max-width: 1400px) {
+                font-size: 30px;
+              }
             }
             .spans {
               .author {
@@ -1689,7 +1697,7 @@ body {
                 }
               }
             }
-            @media (max-width: 580px) {
+            @media (max-width: 1400px) {
               .result {
                 .termin-tag-social {
                   h2 {

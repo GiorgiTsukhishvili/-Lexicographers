@@ -761,6 +761,11 @@ body main section.bank-results .container .result .termin-tag-social h2 {
   color: #1d2933;
   text-transform: uppercase;
 }
+@media (max-width: 1400px) {
+  body main section.bank-results .container .result .termin-tag-social h2 {
+    font-size: 30px;
+  }
+}
 body main section.bank-results .container .result .description {
   width: 90%;
   background-color: #e9e9ed;
@@ -823,6 +828,11 @@ body main section.bank-results .container .result .description h2 {
   font-size: 40px;
   color: #1d2933;
   margin-bottom: 12px;
+}
+@media (max-width: 1400px) {
+  body main section.bank-results .container .result .description h2 {
+    font-size: 30px;
+  }
 }
 body main section.bank-results .container .result .description .spans .author {
   font-family: "DejaVuSans";
@@ -2298,7 +2308,7 @@ body main .profile-section .container .right-inner .profile-termins-result .resu
 body main .profile-section .container .right-inner .profile-termins-result .result .description .spans div .spans-like-icon {
   width: 23px;
 }
-@media (max-width: 580px) {
+@media (max-width: 1400px) {
   body main .profile-section .container .right-inner .profile-termins-result .result .termin-tag-social h2 {
     font-size: 22px;
   }
