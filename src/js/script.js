@@ -122,11 +122,21 @@ if (sendButton) {
 // new term script
 const newTermInput = document.getElementById("new-term");
 const btnAddNewTerm = document.getElementById("addNewTerm");
+const selectContainer = document.querySelector(".new-term-select");
+const selectError = document.querySelector(".error-selector");
 if (newTermInput) {
   btnAddNewTerm.addEventListener("click", () => {
-    if (!newTermInput.value) {
+    if (!newTermInput.value && !selectContainer.value) {
+      selectContainer.classList.add("errorBorder");
       newTermInput.classList.add("errorBorder");
       newTermInput.nextSibling.nextSibling.classList.remove("hidden");
+      selectError.classList.remove("hidden");
+    } else if (!newTermInput.value) {
+      newTermInput.classList.add("errorBorder");
+      newTermInput.nextSibling.nextSibling.classList.remove("hidden");
+    } else if (!selectContainer.value) {
+      selectContainer.classList.add("errorBorder");
+      selectError.classList.remove("hidden");
     } else {
       newTermInput.classList.remove("errorBorder");
       newTermInput.nextSibling.nextSibling.classList.add("hidden");
@@ -150,7 +160,8 @@ const addNewTerm = document.getElementById("addNewTerm");
 if (addNewTerm) {
   addNewTerm.addEventListener("click", () => {
     const newTerm = document.getElementById("new-term");
-    if (newTerm.value) {
+    const selectContainer = document.querySelector(".new-term-select");
+    if (newTerm.value && selectContainer.value) {
       localStorage.setItem("msg", "ტერმინი წარმატებით გაიგზავნა");
       location.href = "success.html";
     }
@@ -237,6 +248,16 @@ if (loginBtn) {
     const usernameInput = document.querySelector(".username");
     const passwordInput = document.querySelector(".psw");
     const emailErrorTxt = document.querySelector(".change-text-error");
+    const passwordError = document.querySelector(".change-text-error-psw");
+    const passwordInputText = document.querySelector(
+      ".change-text-error-psw-text"
+    );
+    if (passwordInput.value.length === 0) {
+      passwordError.classList.remove("hidden");
+    } else if (passwordInput.value.length < 4) {
+      passwordInputText.innerText = "პაროლი არასწორია";
+    }
+
     const emptyInput = [usernameInput, passwordInput].filter(
       (item) => !item.value
     );
