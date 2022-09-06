@@ -122,7 +122,7 @@
               <div class="new-term-select-container">
                 <select name="field" class="new-term-select">
                   <option value="" disabled selected hidden>
-                    აირჩიე სფერო
+                    აირჩიე სფერო*
                   </option>
                   <option value="Front-end development">
                     Front-end development
@@ -135,6 +135,12 @@
                 </select>
                 <p class="selector-background"></p>
                 <p class="selector-arrow">&#10095</p>
+                <span class="error-selector hidden"
+                ><div>
+                  <img src="../../assets/images/error-svg.svg" alt="error" />
+                  <p>ველი სავალდებულოა</p>
+                </div></span
+              >
               </div>
               <button type="button" id="addNewTerm">დამატება</button>
             </form>
