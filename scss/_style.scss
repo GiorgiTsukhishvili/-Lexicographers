@@ -1811,6 +1811,10 @@ body {
                     font-weight: 500;
                     line-height: 20px;
                     padding: 6px 20px;
+
+                    @media (max-width: 460px) {
+                      padding: 6px 10px;
+                    }
                   }
                 }
 
@@ -1821,12 +1825,12 @@ body {
                     font-family: sans-serif;
                     text-transform: uppercase;
                     font-size: 40px;
-                    @media (max-width: 420px) {
-                      font-size: 32px;
+                    @media (max-width: 580px) {
+                      font-size: 22px;
                     }
 
                     @media (max-width: 360px) {
-                      font-size: 26px;
+                      font-size: 18px;
                     }
                   }
                 }
@@ -1860,6 +1864,9 @@ body {
                   span {
                     font-size: 18px;
                     font-family: $dejavu;
+                    @media (max-width: 480px) {
+                      font-size: 16px;
+                    }
                   }
                 }
                 .definition-box {
@@ -1875,6 +1882,10 @@ body {
                     h2 {
                       font-size: 40px;
                       margin-bottom: 9px;
+
+                      @media (max-width: 580px) {
+                        font-size: 22px;
+                      }
                     }
                     span {
                       font-size: 18px;
