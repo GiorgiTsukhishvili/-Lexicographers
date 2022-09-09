@@ -304,6 +304,19 @@ if (registrationBtn) {
     const pswRegInput = document.querySelector(".psw-reg");
     const pswRepeatRegInput = document.querySelector(".psw-repeat-reg");
     const emailErrorP = document.querySelector("#email-error-text");
+    const rulesCheckbox = document.querySelector("#rules");
+
+    if (rulesCheckbox.checked) {
+      rulesCheckbox.nextSibling.nextSibling.children[0].children[1].innerText =
+        "";
+
+      rulesCheckbox.nextSibling.nextSibling.classList.add("hidden");
+    } else {
+      rulesCheckbox.nextSibling.nextSibling.children[0].children[1].innerText =
+        "ველი სავალდებულოა";
+      rulesCheckbox.style.outline = "red";
+      rulesCheckbox.nextSibling.nextSibling.classList.remove("hidden");
+    }
 
     const emptyRegInputs = [
       emailRegInput,
