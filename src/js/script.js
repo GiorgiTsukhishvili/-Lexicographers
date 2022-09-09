@@ -314,8 +314,9 @@ if (registrationBtn) {
     } else {
       rulesCheckbox.nextSibling.nextSibling.children[0].children[1].innerText =
         "ველი სავალდებულოა";
-      rulesCheckbox.style.outline = "red";
+
       rulesCheckbox.nextSibling.nextSibling.classList.remove("hidden");
+      return;
     }
 
     const emptyRegInputs = [
@@ -590,6 +591,8 @@ if (saveButton) {
     const phone = document.querySelector(".phone-reg");
     const password = document.querySelector(".psw-reg");
     const passwordRepeat = document.querySelector(".psw-repeat-reg");
+    const profileMain = document.querySelector(".profile-section");
+    const changeSuccess = document.querySelector(".profile-success-message");
 
     email.nextElementSibling.classList.add("hidden");
     name.nextElementSibling.classList.add("hidden");
@@ -612,6 +615,20 @@ if (saveButton) {
       passwordRepeat.parentElement.nextElementSibling.classList.remove(
         "hidden"
       );
+    }
+
+    if (
+      name.value &&
+      email.value &&
+      validateEmail(email.value) &&
+      phone.value &&
+      password.value.length >= 8 &&
+      password.value &&
+      passwordRepeat.value &&
+      password.value === passwordRepeat.value
+    ) {
+      profileMain.classList.add("hidden");
+      changeSuccess.classList.remove("hidden");
     }
   });
 }
@@ -668,16 +685,16 @@ if (document.querySelector(".collect-letters")) {
 
 // submiting profile change
 
-const submitChange = document.querySelector(".submit-profile-edit");
+// const submitChange = document.querySelector(".submit-profile-edit");
 const profileMain = document.querySelector(".profile-section");
 const changeSuccess = document.querySelector(".profile-success-message");
 
-if (submitChange) {
-  submitChange.addEventListener("click", () => {
-    profileMain.classList.add("hidden");
-    changeSuccess.classList.remove("hidden");
-  });
-}
+// if (submitChange) {
+//   submitChange.addEventListener("click", () => {
+//     profileMain.classList.add("hidden");
+//     changeSuccess.classList.remove("hidden");
+//   });
+// }
 
 const like = document.querySelectorAll(".like-button");
 
