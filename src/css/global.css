@@ -1158,7 +1158,7 @@ body main section.signup-login .container .toggle-form .signup .password-input {
 body main section.signup-login .container .toggle-form .signup .password-input input {
   width: 100%;
 }
-body main section.signup-login .container .toggle-form .signup .password-input img {
+body main section.signup-login .container .toggle-form .signup .password-input .show-password {
   position: absolute;
   right: 20px;
   top: 47px;
@@ -1272,6 +1272,12 @@ body main section.signup-login .container .toggle-form .signup .robot-rules .rul
       -ms-flex-align: center;
           align-items: center;
   min-width: 370px;
+}
+body main section.signup-login .container .toggle-form .signup .robot-rules .rules .error-rules {
+  max-width: 240px;
+  position: absolute;
+  -webkit-transform: translate(0, 30px);
+          transform: translate(0, 30px);
 }
 @media (max-width: 545px) {
   body main section.signup-login .container .toggle-form .signup .robot-rules .rules {
@@ -2398,7 +2404,7 @@ body main .profile-section .container .right-inner .profile-edit .password-input
   width: 100%;
   position: relative;
 }
-body main .profile-section .container .right-inner .profile-edit .password-input img {
+body main .profile-section .container .right-inner .profile-edit .password-input .show-password {
   position: absolute;
   right: 20px;
   top: 25px;
