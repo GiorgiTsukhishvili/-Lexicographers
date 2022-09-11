@@ -306,19 +306,6 @@ if (registrationBtn) {
     const emailErrorP = document.querySelector("#email-error-text");
     const rulesCheckbox = document.querySelector("#rules");
 
-    if (rulesCheckbox.checked) {
-      rulesCheckbox.nextSibling.nextSibling.children[0].children[1].innerText =
-        "";
-
-      rulesCheckbox.nextSibling.nextSibling.classList.add("hidden");
-    } else {
-      rulesCheckbox.nextSibling.nextSibling.children[0].children[1].innerText =
-        "ველი სავალდებულოა";
-
-      rulesCheckbox.nextSibling.nextSibling.classList.remove("hidden");
-      return;
-    }
-
     const emptyRegInputs = [
       emailRegInput,
       nameRegInput,
@@ -374,6 +361,19 @@ if (registrationBtn) {
         // registrationBtn.removeAttribute("onclick");
       }
     });
+
+    if (rulesCheckbox.checked) {
+      rulesCheckbox.nextSibling.nextSibling.children[0].children[1].innerText =
+        "";
+
+      rulesCheckbox.nextSibling.nextSibling.classList.add("hidden");
+    } else {
+      rulesCheckbox.nextSibling.nextSibling.children[0].children[1].innerText =
+        "ველი სავალდებულოა";
+
+      rulesCheckbox.nextSibling.nextSibling.classList.remove("hidden");
+      return;
+    }
     if (
       emailRegInput.nextSibling.nextSibling.classList.contains("hidden") &&
       nameRegInput.nextSibling.nextSibling.classList.contains("hidden") &&
