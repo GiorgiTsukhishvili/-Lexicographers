@@ -4203,9 +4203,14 @@ body footer .container .tablet-responsive .contact-info p a:visited:hover {
   }
 }
 body .terms-and-condition {
-  width: 1400px;
+  width: 100%;
   padding-right: 120px;
   margin: 0 auto;
+}
+@media (max-width: 800px) {
+  body .terms-and-condition {
+    padding: 0;
+  }
 }
 body .terms-and-condition__header {
   display: -webkit-box;
@@ -4238,6 +4243,34 @@ body .terms-and-condition__header--paragraph {
   line-height: 24px;
   font-family: "DejaVuSans";
 }
+@media (max-width: 800px) {
+  body .terms-and-condition__header {
+    margin-top: 44.5px;
+  }
+  body .terms-and-condition__header--header {
+    font-size: 28px;
+    line-height: 37px;
+  }
+  body .terms-and-condition__header--paragraph {
+    max-width: 508px;
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
+@media (max-width: 360px) {
+  body .terms-and-condition__header {
+    margin-top: 40px;
+  }
+  body .terms-and-condition__header--header {
+    font-size: 19px;
+    line-height: 26px;
+  }
+  body .terms-and-condition__header--paragraph {
+    max-width: 213px;
+    font-size: 10px;
+    line-height: 21px;
+  }
+}
 body .terms-and-condition__section {
   margin: 150px;
 }
@@ -4254,4 +4287,32 @@ body .terms-and-condition__section--paragraph {
   line-height: 24px;
   color: #000000;
   margin-bottom: 20px;
+}
+@media (max-width: 800px) {
+  body .terms-and-condition__section {
+    margin: 63px;
+  }
+  body .terms-and-condition__section--header {
+    font-size: 25px;
+    line-height: 29px;
+  }
+  body .terms-and-condition__section--paragraph {
+    max-width: 648px;
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+@media (max-width: 360px) {
+  body .terms-and-condition__section {
+    margin: 63px 24px;
+  }
+  body .terms-and-condition__section--header {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  body .terms-and-condition__section--paragraph {
+    max-width: 272px;
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
