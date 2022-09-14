@@ -122,11 +122,21 @@ if (sendButton) {
 // new term script
 const newTermInput = document.getElementById("new-term");
 const btnAddNewTerm = document.getElementById("addNewTerm");
+const selectContainer = document.querySelector(".new-term-select");
+const selectError = document.querySelector(".error-selector");
 if (newTermInput) {
   btnAddNewTerm.addEventListener("click", () => {
-    if (!newTermInput.value) {
+    if (!newTermInput.value && !selectContainer.value) {
+      selectContainer.classList.add("errorBorder");
       newTermInput.classList.add("errorBorder");
       newTermInput.nextSibling.nextSibling.classList.remove("hidden");
+      selectError.classList.remove("hidden");
+    } else if (!newTermInput.value) {
+      newTermInput.classList.add("errorBorder");
+      newTermInput.nextSibling.nextSibling.classList.remove("hidden");
+    } else if (!selectContainer.value) {
+      selectContainer.classList.add("errorBorder");
+      selectError.classList.remove("hidden");
     } else {
       newTermInput.classList.remove("errorBorder");
       newTermInput.nextSibling.nextSibling.classList.add("hidden");
@@ -150,7 +160,8 @@ const addNewTerm = document.getElementById("addNewTerm");
 if (addNewTerm) {
   addNewTerm.addEventListener("click", () => {
     const newTerm = document.getElementById("new-term");
-    if (newTerm.value) {
+    const selectContainer = document.querySelector(".new-term-select");
+    if (newTerm.value && selectContainer.value) {
       localStorage.setItem("msg", "ტერმინი წარმატებით გაიგზავნა");
       location.href = "success.html";
     }
@@ -237,6 +248,16 @@ if (loginBtn) {
     const usernameInput = document.querySelector(".username");
     const passwordInput = document.querySelector(".psw");
     const emailErrorTxt = document.querySelector(".change-text-error");
+    const passwordError = document.querySelector(".change-text-error-psw");
+    const passwordInputText = document.querySelector(
+      ".change-text-error-psw-text"
+    );
+    if (passwordInput.value.length === 0) {
+      passwordError.classList.remove("hidden");
+    } else if (passwordInput.value.length < 4) {
+      passwordInputText.innerText = "პაროლი არასწორია";
+    }
+
     const emptyInput = [usernameInput, passwordInput].filter(
       (item) => !item.value
     );
@@ -283,6 +304,7 @@ if (registrationBtn) {
     const pswRegInput = document.querySelector(".psw-reg");
     const pswRepeatRegInput = document.querySelector(".psw-repeat-reg");
     const emailErrorP = document.querySelector("#email-error-text");
+    const rulesCheckbox = document.querySelector("#rules");
 
     const emptyRegInputs = [
       emailRegInput,
@@ -339,6 +361,19 @@ if (registrationBtn) {
         // registrationBtn.removeAttribute("onclick");
       }
     });
+
+    if (rulesCheckbox.checked) {
+      rulesCheckbox.nextSibling.nextSibling.children[0].children[1].innerText =
+        "";
+
+      rulesCheckbox.nextSibling.nextSibling.classList.add("hidden");
+    } else {
+      rulesCheckbox.nextSibling.nextSibling.children[0].children[1].innerText =
+        "ველი სავალდებულოა";
+
+      rulesCheckbox.nextSibling.nextSibling.classList.remove("hidden");
+      return;
+    }
     if (
       emailRegInput.nextSibling.nextSibling.classList.contains("hidden") &&
       nameRegInput.nextSibling.nextSibling.classList.contains("hidden") &&
@@ -556,6 +591,8 @@ if (saveButton) {
     const phone = document.querySelector(".phone-reg");
     const password = document.querySelector(".psw-reg");
     const passwordRepeat = document.querySelector(".psw-repeat-reg");
+    const profileMain = document.querySelector(".profile-section");
+    const changeSuccess = document.querySelector(".profile-success-message");
 
     email.nextElementSibling.classList.add("hidden");
     name.nextElementSibling.classList.add("hidden");
@@ -578,6 +615,20 @@ if (saveButton) {
       passwordRepeat.parentElement.nextElementSibling.classList.remove(
         "hidden"
       );
+    }
+
+    if (
+      name.value &&
+      email.value &&
+      validateEmail(email.value) &&
+      phone.value &&
+      password.value.length >= 8 &&
+      password.value &&
+      passwordRepeat.value &&
+      password.value === passwordRepeat.value
+    ) {
+      profileMain.classList.add("hidden");
+      changeSuccess.classList.remove("hidden");
     }
   });
 }
@@ -634,16 +685,16 @@ if (document.querySelector(".collect-letters")) {
 
 // submiting profile change
 
-const submitChange = document.querySelector(".submit-profile-edit");
+// const submitChange = document.querySelector(".submit-profile-edit");
 const profileMain = document.querySelector(".profile-section");
 const changeSuccess = document.querySelector(".profile-success-message");
 
-if (submitChange) {
-  submitChange.addEventListener("click", () => {
-    profileMain.classList.add("hidden");
-    changeSuccess.classList.remove("hidden");
-  });
-}
+// if (submitChange) {
+//   submitChange.addEventListener("click", () => {
+//     profileMain.classList.add("hidden");
+//     changeSuccess.classList.remove("hidden");
+//   });
+// }
 
 const like = document.querySelectorAll(".like-button");
 

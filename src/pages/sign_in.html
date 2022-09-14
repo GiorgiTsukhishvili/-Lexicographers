@@ -119,6 +119,7 @@
                 id="password"
                 placeholder="პაროლი*"
                 class="psw"
+                style="margin-bottom: 10px;"
                 >
 
                 <img
@@ -126,6 +127,8 @@
                   src="../../assets/images/icon-eye.svg"
                   alt="eye"
                 />
+                <span class="change-text-error-psw hidden"><div><img src="../../assets/images/error-svg.svg" alt="error"><p class="change-text-error-psw-text">პაროლი სავალდებულოა</p></div></span>
+
               </div>
               <span class="error hidden"><div><img src="../../assets/images/error-svg.svg" alt="error"><p>პაროლი სავალდებულოა</p></div></span>
 
@@ -149,29 +152,34 @@
               <input class="phone-reg" type="number" placeholder="ტელეფონის ნომერი*" />
               <span class="error hidden"><div><img src="../../assets/images/error-svg.svg" alt="error"><p></p></div></span>
               <div class="password-input">
-              <input class="psw-reg" type="password" placeholder="პაროლი*" />
-              <img
-                  class="show-password"
-                  src="../../assets/images/icon-eye.svg"
-                  alt="eye"
-                />
+              <input class="psw-reg" type="password" placeholder="პაროლი*" style="margin-bottom: 10px;" />
+             
               <span class="error hidden"><div><img src="../../assets/images/error-svg.svg" alt="error"><p></p></div></span>
-                </div>
+               
+              <img
+              class="show-password"
+              src="../../assets/images/icon-eye.svg"
+              alt="eye"
+            />
+            </div>
 
                 <div class="password-input">
-              <input class="psw-repeat-reg" type="password" placeholder="პაროლის გამეორება*" />
+              <input class="psw-repeat-reg" style="margin-bottom: 10px;"  type="password" placeholder="პაროლის გამეორება*" />
+              
+              <span class="error hidden"  ><div><img src="../../assets/images/error-svg.svg" alt="error"><p></p></div></span>
+                
               <img
-                  class="show-password"
-                  src="../../assets/images/icon-eye.svg"
-                  alt="eye"
-                />
-              <span class="error hidden"><div><img src="../../assets/images/error-svg.svg" alt="error"><p></p></div></span>
-                </div>
+              class="show-password"
+              src="../../assets/images/icon-eye.svg"
+              alt="eye"
+            />
+            </div>
 
               <div class="robot-rules">
                 <span>I'm not a Robot</span>
                 <div class="rules">
                   <input type="checkbox" name="rules" id="rules" />
+                  <span class="error-rules hidden"  ><div><img src="../../assets/images/error-svg.svg" alt="error"><p></p></div></span>
                   <label for="rules"
                     ><a href="./terms_and_condition.html">ვეთანხმები საიტის წესებს და პირობებს*</a></label
                   >

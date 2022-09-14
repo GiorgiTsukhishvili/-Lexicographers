@@ -761,6 +761,11 @@ body main section.bank-results .container .result .termin-tag-social h2 {
   color: #1d2933;
   text-transform: uppercase;
 }
+@media (max-width: 1400px) {
+  body main section.bank-results .container .result .termin-tag-social h2 {
+    font-size: 30px;
+  }
+}
 body main section.bank-results .container .result .description {
   width: 90%;
   background-color: #e9e9ed;
@@ -823,6 +828,11 @@ body main section.bank-results .container .result .description h2 {
   font-size: 40px;
   color: #1d2933;
   margin-bottom: 12px;
+}
+@media (max-width: 1400px) {
+  body main section.bank-results .container .result .description h2 {
+    font-size: 30px;
+  }
 }
 body main section.bank-results .container .result .description .spans .author {
   font-family: "DejaVuSans";
@@ -1148,7 +1158,7 @@ body main section.signup-login .container .toggle-form .signup .password-input {
 body main section.signup-login .container .toggle-form .signup .password-input input {
   width: 100%;
 }
-body main section.signup-login .container .toggle-form .signup .password-input img {
+body main section.signup-login .container .toggle-form .signup .password-input .show-password {
   position: absolute;
   right: 20px;
   top: 47px;
@@ -1262,6 +1272,12 @@ body main section.signup-login .container .toggle-form .signup .robot-rules .rul
       -ms-flex-align: center;
           align-items: center;
   min-width: 370px;
+}
+body main section.signup-login .container .toggle-form .signup .robot-rules .rules .error-rules {
+  max-width: 240px;
+  position: absolute;
+  -webkit-transform: translate(0, 30px);
+          transform: translate(0, 30px);
 }
 @media (max-width: 545px) {
   body main section.signup-login .container .toggle-form .signup .robot-rules .rules {
@@ -1536,6 +1552,15 @@ body main section.about-project .container a .btn-your-term p {
   font-size: 18px;
   color: #ffffff;
 }
+body main section.about-project .container .image img {
+  width: 100%;
+}
+@media (max-width: 1500px) {
+  body main section.about-project .container .image img {
+    margin-left: 40px;
+    padding-right: 40px;
+  }
+}
 body main .chatbot {
   position: fixed;
   bottom: 70px;
@@ -1591,6 +1616,11 @@ body main section.about-project-section .container .project .text .more-click:ho
 }
 body main section.about-project-section .container .project .show-more .texts .more-texts {
   display: inline;
+}
+@media (max-width: 1500px) {
+  body main section.about-project-section img {
+    width: 30%;
+  }
 }
 body main section.partners-section .container .organisation-partenrs {
   margin-bottom: 114px;
@@ -1743,6 +1773,7 @@ body main section.new-term .container .inputs-container form .new-term-select-co
   display: inline-block;
   padding: 5px 10px;
   border-radius: 6px;
+  pointer-events: none;
 }
 body main section.new-term .container .inputs-container form .new-term-select-container .selector-background {
   background-color: none;
@@ -1761,8 +1792,8 @@ body main section.new-term .container .inputs-container form .new-term-select-co
   background-color: none;
 }
 body main section.new-term .container .inputs-container form .new-term-select-container .new-term-select:focus ~ .selector-arrow {
-  -webkit-transform: rotate(270deg);
-          transform: rotate(270deg);
+  -webkit-transform: rotate(270deg) translateY(2px);
+          transform: rotate(270deg) translateY(2px);
   color: white;
 }
 body main section.new-term .container .inputs-container form .new-term-select-container .new-term-select:focus ~ .selector-background {
@@ -2027,6 +2058,24 @@ body main .recovery-password-success h1 {
   color: #1d2933;
   margin-bottom: 30px;
 }
+@media (max-width: 768px) {
+  body main .recovery-password-success .container h1 {
+    font-size: 25px;
+    line-height: 29px;
+  }
+  body main .recovery-password-success .container img {
+    width: 108px;
+  }
+}
+@media (max-width: 320px) {
+  body main .recovery-password-success .container h1 {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  body main .recovery-password-success .container img {
+    width: 45px;
+  }
+}
 body main .profile-section {
   padding: 70px 0 200px 0;
 }
@@ -2265,7 +2314,7 @@ body main .profile-section .container .right-inner .profile-termins-result .resu
 body main .profile-section .container .right-inner .profile-termins-result .result .description .spans div .spans-like-icon {
   width: 23px;
 }
-@media (max-width: 580px) {
+@media (max-width: 1400px) {
   body main .profile-section .container .right-inner .profile-termins-result .result .termin-tag-social h2 {
     font-size: 22px;
   }
@@ -2355,7 +2404,7 @@ body main .profile-section .container .right-inner .profile-edit .password-input
   width: 100%;
   position: relative;
 }
-body main .profile-section .container .right-inner .profile-edit .password-input img {
+body main .profile-section .container .right-inner .profile-edit .password-input .show-password {
   position: absolute;
   right: 20px;
   top: 25px;
@@ -2417,6 +2466,11 @@ body main .profile-section .container .right-inner .my-terms .term .title .terms
   line-height: 20px;
   padding: 6px 20px;
 }
+@media (max-width: 460px) {
+  body main .profile-section .container .right-inner .my-terms .term .title .terms-left h1 {
+    padding: 6px 10px;
+  }
+}
 body main .profile-section .container .right-inner .my-terms .term .title .term-title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2430,14 +2484,14 @@ body main .profile-section .container .right-inner .my-terms .term .title .term-
   text-transform: uppercase;
   font-size: 40px;
 }
-@media (max-width: 420px) {
+@media (max-width: 580px) {
   body main .profile-section .container .right-inner .my-terms .term .title .term-title h2 {
-    font-size: 32px;
+    font-size: 22px;
   }
 }
 @media (max-width: 360px) {
   body main .profile-section .container .right-inner .my-terms .term .title .term-title h2 {
-    font-size: 26px;
+    font-size: 18px;
   }
 }
 body main .profile-section .container .right-inner .my-terms .term .title .social-fb {
@@ -2479,6 +2533,11 @@ body main .profile-section .container .right-inner .my-terms .term .definition .
   font-size: 18px;
   font-family: "DejaVuSans";
 }
+@media (max-width: 480px) {
+  body main .profile-section .container .right-inner .my-terms .term .definition .definition-header span {
+    font-size: 16px;
+  }
+}
 body main .profile-section .container .right-inner .my-terms .term .definition .definition-box {
   background: #e9e9ed;
   font-family: "DejaVuSans";
@@ -2499,6 +2558,11 @@ body main .profile-section .container .right-inner .my-terms .term .definition .
 body main .profile-section .container .right-inner .my-terms .term .definition .definition-box .definition-info h2 {
   font-size: 40px;
   margin-bottom: 9px;
+}
+@media (max-width: 580px) {
+  body main .profile-section .container .right-inner .my-terms .term .definition .definition-box .definition-info h2 {
+    font-size: 22px;
+  }
 }
 body main .profile-section .container .right-inner .my-terms .term .definition .definition-box .definition-info span {
   font-size: 18px;
@@ -2557,6 +2621,28 @@ body main section.success-message .container .success-msg div p {
   line-height: 45px;
   color: #1d2933;
   margin-bottom: 30px;
+}
+@media (max-width: 768px) {
+  body main section.success-message .container .success-msg div p {
+    font-size: 25px;
+    line-height: 33px;
+  }
+}
+@media (max-width: 320px) {
+  body main section.success-message .container .success-msg div p {
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
+@media (max-width: 768px) {
+  body main section.success-message .container .success-msg div img {
+    width: 108px;
+  }
+}
+@media (max-width: 768px) {
+  body main section.success-message .container .success-msg div img {
+    width: 45px;
+  }
 }
 body main section.definition-offer .container {
   padding: 80px 0;
@@ -3237,9 +3323,6 @@ body footer .container .tablet-responsive {
   body main section.about-project .container .left-block a .btn-your-term p {
     font-size: 14px;
   }
-  body main section.about-project .container .image img {
-    width: 300px;
-  }
   body main section.bank-section .container .alphabets-search .title-bank h2 {
     font-size: 26px;
   }
@@ -3630,6 +3713,8 @@ body footer .container .tablet-responsive .contact-info p a:visited:hover {
     display: block;
     border: none;
     color: #1d2933;
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
   }
   body header .container nav {
     display: none;
@@ -4102,10 +4187,30 @@ body footer .container .tablet-responsive .contact-info p a:visited:hover {
     cursor: pointer;
   }
 }
+@media (max-width: 400px) {
+  body header .container .logoStyle {
+    width: 250px;
+  }
+  body header .container .logoStyle .main {
+    width: 100%;
+    padding: 0;
+  }
+  body header .container .logoStyle .main h2 {
+    font-size: 17px;
+  }
+  body header .container .logoStyle .main .logo img {
+    width: 20px;
+  }
+}
 body .terms-and-condition {
-  width: 1400px;
+  width: 100%;
   padding-right: 120px;
   margin: 0 auto;
+}
+@media (max-width: 800px) {
+  body .terms-and-condition {
+    padding: 0;
+  }
 }
 body .terms-and-condition__header {
   display: -webkit-box;
@@ -4138,6 +4243,34 @@ body .terms-and-condition__header--paragraph {
   line-height: 24px;
   font-family: "DejaVuSans";
 }
+@media (max-width: 800px) {
+  body .terms-and-condition__header {
+    margin-top: 44.5px;
+  }
+  body .terms-and-condition__header--header {
+    font-size: 28px;
+    line-height: 37px;
+  }
+  body .terms-and-condition__header--paragraph {
+    max-width: 508px;
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
+@media (max-width: 360px) {
+  body .terms-and-condition__header {
+    margin-top: 40px;
+  }
+  body .terms-and-condition__header--header {
+    font-size: 19px;
+    line-height: 26px;
+  }
+  body .terms-and-condition__header--paragraph {
+    max-width: 213px;
+    font-size: 10px;
+    line-height: 21px;
+  }
+}
 body .terms-and-condition__section {
   margin: 150px;
 }
@@ -4154,4 +4287,32 @@ body .terms-and-condition__section--paragraph {
   line-height: 24px;
   color: #000000;
   margin-bottom: 20px;
+}
+@media (max-width: 800px) {
+  body .terms-and-condition__section {
+    margin: 63px;
+  }
+  body .terms-and-condition__section--header {
+    font-size: 25px;
+    line-height: 29px;
+  }
+  body .terms-and-condition__section--paragraph {
+    max-width: 648px;
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+@media (max-width: 360px) {
+  body .terms-and-condition__section {
+    margin: 63px 24px;
+  }
+  body .terms-and-condition__section--header {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  body .terms-and-condition__section--paragraph {
+    max-width: 272px;
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
