@@ -519,7 +519,7 @@ if (document.querySelector("ul.nav-ul")) {
           <div class="termin-tag-social">
             <h2>${el.termin}</h2>
             <div class="tagandsocial">
-            <h1>Front-End</h1>
+            <a href="#">Front-End</a>
               <div class="fb-icon">
                 <img src="../../assets/images/fb.svg" alt="fb" />
               </div>

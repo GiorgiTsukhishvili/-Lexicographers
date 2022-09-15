@@ -2059,20 +2059,25 @@ body main .recovery-password-success h1 {
   margin-bottom: 30px;
 }
 @media (max-width: 768px) {
-  body main .recovery-password-success .container h1 {
+  body main .recovery-password-success .container h1,
+body main .profile-success-message .container h1 {
     font-size: 25px;
     line-height: 29px;
+    text-align: center;
   }
-  body main .recovery-password-success .container img {
+  body main .recovery-password-success .container img,
+body main .profile-success-message .container img {
     width: 108px;
   }
 }
 @media (max-width: 320px) {
-  body main .recovery-password-success .container h1 {
+  body main .recovery-password-success .container h1,
+body main .profile-success-message .container h1 {
     font-size: 16px;
     line-height: 18px;
   }
-  body main .recovery-password-success .container img {
+  body main .recovery-password-success .container img,
+body main .profile-success-message .container img {
     width: 45px;
   }
 }
@@ -2205,7 +2210,7 @@ body main .profile-section .container .right-inner .profile-termins-result .resu
       -ms-flex-align: center;
           align-items: center;
 }
-body main .profile-section .container .right-inner .profile-termins-result .result .termin-tag-social h1 {
+body main .profile-section .container .right-inner .profile-termins-result .result .termin-tag-social a {
   margin-right: 20px;
   font-family: sans-serif;
   font-size: 16px;
@@ -2456,7 +2461,7 @@ body main .profile-section .container .right-inner .my-terms .term .title .terms
       -ms-flex-align: center;
           align-items: center;
 }
-body main .profile-section .container .right-inner .my-terms .term .title .terms-left h1 {
+body main .profile-section .container .right-inner .my-terms .term .title .terms-left a {
   margin-right: 20px;
   font-family: sans-serif;
   font-size: 16px;
@@ -2467,7 +2472,7 @@ body main .profile-section .container .right-inner .my-terms .term .title .terms
   padding: 6px 20px;
 }
 @media (max-width: 460px) {
-  body main .profile-section .container .right-inner .my-terms .term .title .terms-left h1 {
+  body main .profile-section .container .right-inner .my-terms .term .title .terms-left a {
     padding: 6px 10px;
   }
 }
