@@ -2011,9 +2011,28 @@ body {
               font-size: 40px;
               font-family: "Quicksand", sans-serif;
               text-transform: uppercase;
+              @media (max-width: 470px) {
+                font-size: 24px;
+              }
+              @media (max-width: 370px) {
+                font-size: 18px;
+              }
             }
             .info {
               @include flex-jc-ai(space-between, center);
+
+              @media (max-width: 470px) {
+                .tags {
+                  & span {
+                    font-size: 14px;
+                  }
+                }
+              }
+              @media (max-width: 370px) {
+                .tags {
+                  font-size: 13px;
+                }
+              }
               .fb-icon {
                 margin-left: 35px;
               }
@@ -2755,7 +2774,7 @@ body {
           .definition-header {
             .definition-title {
               h1 {
-                @media (min-width: 700px) {
+                @media (max-width: 700px) {
                   font-size: 32px;
                 }
               }
