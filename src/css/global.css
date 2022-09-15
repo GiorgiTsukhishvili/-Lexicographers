@@ -2671,6 +2671,16 @@ body main section.definition-offer .container .definition-header-1 .definition-t
   font-family: "Quicksand", sans-serif;
   text-transform: uppercase;
 }
+@media (max-width: 470px) {
+  body main section.definition-offer .container .definition-header-1 .definition-title h1 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 370px) {
+  body main section.definition-offer .container .definition-header-1 .definition-title h1 {
+    font-size: 18px;
+  }
+}
 body main section.definition-offer .container .definition-header-1 .definition-title .info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2681,6 +2691,16 @@ body main section.definition-offer .container .definition-header-1 .definition-t
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media (max-width: 470px) {
+  body main section.definition-offer .container .definition-header-1 .definition-title .info .tags span {
+    font-size: 14px;
+  }
+}
+@media (max-width: 370px) {
+  body main section.definition-offer .container .definition-header-1 .definition-title .info .tags {
+    font-size: 13px;
+  }
 }
 body main section.definition-offer .container .definition-header-1 .definition-title .info .fb-icon {
   margin-left: 35px;
@@ -3493,7 +3513,7 @@ body main section.bank-section .container .alphabets-search .double .left-alphab
     height: 30px;
   }
 }
-@media only screen and (max-width: 1200px) and (min-width: 700px) {
+@media only screen and (max-width: 1200px) and (max-width: 700px) {
   body main section.definition-offer .container .definition-header .definition-title h1 {
     font-size: 32px;
   }
