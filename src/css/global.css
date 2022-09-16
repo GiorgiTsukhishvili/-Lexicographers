@@ -1315,7 +1315,8 @@ body main section.signup-login .container .toggle-form .signup .robot-rules .rul
 body main section.signup-login .container .click-recovery {
   display: none;
 }
-body main section.signup-login .container .recovery-password {
+body main section.signup-login .container .recovery-password,
+body main section.signup-login .container .recovery-email {
   display: none;
   max-width: 1297px;
   width: 85%;
@@ -1325,12 +1326,18 @@ body main section.signup-login .container .recovery-password {
   text-align: center;
   padding: 43px 0 74px 0;
 }
-body main section.signup-login .container .recovery-password .recovery-title {
+body main section.signup-login .container .recovery-password .recovery-title,
+body main section.signup-login .container .recovery-password .recovery-email-title,
+body main section.signup-login .container .recovery-email .recovery-title,
+body main section.signup-login .container .recovery-email .recovery-email-title {
   font-family: "BPGVenuri2010";
   font-size: 40px;
   color: #1d2933;
 }
-body main section.signup-login .container .recovery-password .password-form {
+body main section.signup-login .container .recovery-password .password-form,
+body main section.signup-login .container .recovery-password .email-form,
+body main section.signup-login .container .recovery-email .password-form,
+body main section.signup-login .container .recovery-email .email-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1342,7 +1349,10 @@ body main section.signup-login .container .recovery-password .password-form {
       -ms-flex-align: center;
           align-items: center;
 }
-body main section.signup-login .container .recovery-password .password-form input {
+body main section.signup-login .container .recovery-password .password-form input,
+body main section.signup-login .container .recovery-password .email-form input,
+body main section.signup-login .container .recovery-email .password-form input,
+body main section.signup-login .container .recovery-email .email-form input {
   background: none;
   border: #798996 1px solid;
   border-radius: 8px;
@@ -1352,37 +1362,49 @@ body main section.signup-login .container .recovery-password .password-form inpu
   margin-top: 43px;
   font-size: 18px;
 }
-body main section.signup-login .container .recovery-password .password-form input:focus {
+body main section.signup-login .container .recovery-password .password-form input:focus,
+body main section.signup-login .container .recovery-password .email-form input:focus,
+body main section.signup-login .container .recovery-email .password-form input:focus,
+body main section.signup-login .container .recovery-email .email-form input:focus {
   border: 3px solid;
 }
-body main section.signup-login .container .recovery-password .password-form input ::-webkit-input-placeholder {
+body main section.signup-login .container .recovery-password .password-form input ::-webkit-input-placeholder, body main section.signup-login .container .recovery-password .email-form input ::-webkit-input-placeholder, body main section.signup-login .container .recovery-email .password-form input ::-webkit-input-placeholder, body main section.signup-login .container .recovery-email .email-form input ::-webkit-input-placeholder {
   font-family: "DejaVuSans";
   color: #798996;
 }
-body main section.signup-login .container .recovery-password .password-form input ::-moz-placeholder {
+body main section.signup-login .container .recovery-password .password-form input ::-moz-placeholder, body main section.signup-login .container .recovery-password .email-form input ::-moz-placeholder, body main section.signup-login .container .recovery-email .password-form input ::-moz-placeholder, body main section.signup-login .container .recovery-email .email-form input ::-moz-placeholder {
   font-family: "DejaVuSans";
   color: #798996;
 }
-body main section.signup-login .container .recovery-password .password-form input :-ms-input-placeholder {
+body main section.signup-login .container .recovery-password .password-form input :-ms-input-placeholder, body main section.signup-login .container .recovery-password .email-form input :-ms-input-placeholder, body main section.signup-login .container .recovery-email .password-form input :-ms-input-placeholder, body main section.signup-login .container .recovery-email .email-form input :-ms-input-placeholder {
   font-family: "DejaVuSans";
   color: #798996;
 }
-body main section.signup-login .container .recovery-password .password-form input ::-ms-input-placeholder {
+body main section.signup-login .container .recovery-password .password-form input ::-ms-input-placeholder, body main section.signup-login .container .recovery-password .email-form input ::-ms-input-placeholder, body main section.signup-login .container .recovery-email .password-form input ::-ms-input-placeholder, body main section.signup-login .container .recovery-email .email-form input ::-ms-input-placeholder {
   font-family: "DejaVuSans";
   color: #798996;
 }
-body main section.signup-login .container .recovery-password .password-form input ::placeholder {
+body main section.signup-login .container .recovery-password .password-form input ::placeholder,
+body main section.signup-login .container .recovery-password .email-form input ::placeholder,
+body main section.signup-login .container .recovery-email .password-form input ::placeholder,
+body main section.signup-login .container .recovery-email .email-form input ::placeholder {
   font-family: "DejaVuSans";
   color: #798996;
 }
-body main section.signup-login .container .recovery-password .password-form span {
+body main section.signup-login .container .recovery-password .password-form span,
+body main section.signup-login .container .recovery-password .email-form span,
+body main section.signup-login .container .recovery-email .password-form span,
+body main section.signup-login .container .recovery-email .email-form span {
   vertical-align: middle;
   margin-top: 10px;
   width: 75%;
   color: #fe4444;
   font-family: "DejaVuSans";
 }
-body main section.signup-login .container .recovery-password .password-form span div {
+body main section.signup-login .container .recovery-password .password-form span div,
+body main section.signup-login .container .recovery-password .email-form span div,
+body main section.signup-login .container .recovery-email .password-form span div,
+body main section.signup-login .container .recovery-email .email-form span div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1390,10 +1412,16 @@ body main section.signup-login .container .recovery-password .password-form span
       -ms-flex-align: center;
           align-items: center;
 }
-body main section.signup-login .container .recovery-password .password-form span div img {
+body main section.signup-login .container .recovery-password .password-form span div img,
+body main section.signup-login .container .recovery-password .email-form span div img,
+body main section.signup-login .container .recovery-email .password-form span div img,
+body main section.signup-login .container .recovery-email .email-form span div img {
   margin-right: 15px;
 }
-body main section.signup-login .container .recovery-password .password-form button {
+body main section.signup-login .container .recovery-password .password-form button,
+body main section.signup-login .container .recovery-password .email-form button,
+body main section.signup-login .container .recovery-email .password-form button,
+body main section.signup-login .container .recovery-email .email-form button {
   background: #798996;
   outline: none;
   border: none;
@@ -1407,7 +1435,10 @@ body main section.signup-login .container .recovery-password .password-form butt
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-body main section.signup-login .container .recovery-password .password-form button:hover {
+body main section.signup-login .container .recovery-password .password-form button:hover,
+body main section.signup-login .container .recovery-password .email-form button:hover,
+body main section.signup-login .container .recovery-email .password-form button:hover,
+body main section.signup-login .container .recovery-email .email-form button:hover {
   background-color: #eed370;
   text-decoration: none;
   color: #000000;
@@ -2022,7 +2053,8 @@ body main #menu .hidden {
   display: none;
 }
 body main .profile-success-message,
-body main .recovery-password-success {
+body main .recovery-password-success,
+body main .recovery-email-success {
   height: 601px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2035,7 +2067,8 @@ body main .recovery-password-success {
           align-items: center;
 }
 body main .profile-success-message .container,
-body main .recovery-password-success .container {
+body main .recovery-password-success .container,
+body main .recovery-email-success .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2051,7 +2084,8 @@ body main .recovery-password-success .container {
           align-items: center;
 }
 body main .profile-success-message h1,
-body main .recovery-password-success h1 {
+body main .recovery-password-success h1,
+body main .recovery-email-success h1 {
   font-size: 40px;
   font-family: "BPGVenuri2010";
   line-height: 45px;
@@ -2060,24 +2094,28 @@ body main .recovery-password-success h1 {
 }
 @media (max-width: 768px) {
   body main .recovery-password-success .container h1,
-body main .profile-success-message .container h1 {
+body main .profile-success-message .container h1,
+body main .recovery-email-success .container h1 {
     font-size: 25px;
     line-height: 29px;
     text-align: center;
   }
   body main .recovery-password-success .container img,
-body main .profile-success-message .container img {
+body main .profile-success-message .container img,
+body main .recovery-email-success .container img {
     width: 108px;
   }
 }
 @media (max-width: 320px) {
   body main .recovery-password-success .container h1,
-body main .profile-success-message .container h1 {
+body main .profile-success-message .container h1,
+body main .recovery-email-success .container h1 {
     font-size: 16px;
     line-height: 18px;
   }
   body main .recovery-password-success .container img,
-body main .profile-success-message .container img {
+body main .profile-success-message .container img,
+body main .recovery-email-success .container img {
     width: 45px;
   }
 }

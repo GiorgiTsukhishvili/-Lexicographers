@@ -885,7 +885,8 @@ body {
         .click-recovery {
           display: none;
         }
-        .recovery-password {
+        .recovery-password,
+        .recovery-email {
           display: none;
           max-width: 1297px;
           width: 85%;
@@ -896,12 +897,14 @@ body {
           // flex-direction: column;
           text-align: center;
           padding: 43px 0 74px 0;
-          .recovery-title {
+          .recovery-title,
+          .recovery-email-title {
             font-family: $venuri;
             font-size: 40px;
             color: $darkBlue;
           }
-          .password-form {
+          .password-form,
+          .email-form {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -1473,7 +1476,8 @@ body {
     }
 
     .profile-success-message,
-    .recovery-password-success {
+    .recovery-password-success,
+    .recovery-email-success {
       height: 601px;
       display: flex;
       justify-content: center;
@@ -1495,7 +1499,8 @@ body {
     }
 
     .recovery-password-success,
-    .profile-success-message {
+    .profile-success-message,
+    .recovery-email-success {
       @media (max-width: 768px) {
         .container {
           h1 {
