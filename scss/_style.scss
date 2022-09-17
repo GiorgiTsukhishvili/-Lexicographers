@@ -885,7 +885,8 @@ body {
         .click-recovery {
           display: none;
         }
-        .recovery-password {
+        .recovery-password,
+        .recovery-email {
           display: none;
           max-width: 1297px;
           width: 85%;
@@ -896,12 +897,14 @@ body {
           // flex-direction: column;
           text-align: center;
           padding: 43px 0 74px 0;
-          .recovery-title {
+          .recovery-title,
+          .recovery-email-title {
             font-family: $venuri;
             font-size: 40px;
             color: $darkBlue;
           }
-          .password-form {
+          .password-form,
+          .email-form {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -1473,7 +1476,8 @@ body {
     }
 
     .profile-success-message,
-    .recovery-password-success {
+    .recovery-password-success,
+    .recovery-email-success {
       height: 601px;
       display: flex;
       justify-content: center;
@@ -1494,12 +1498,15 @@ body {
       }
     }
 
-    .recovery-password-success {
+    .recovery-password-success,
+    .profile-success-message,
+    .recovery-email-success {
       @media (max-width: 768px) {
         .container {
           h1 {
             font-size: 25px;
             line-height: 29px;
+            text-align: center;
           }
 
           img {
@@ -1620,7 +1627,7 @@ body {
                 border-bottom: 1px solid $darkBlue;
                 padding-bottom: 7px;
 
-                & h1 {
+                & a {
                   margin-right: 20px;
                   font-family: sans-serif;
                   font-size: 16px;
@@ -1817,7 +1824,7 @@ body {
                   gap: 20px;
                   align-items: center;
 
-                  & h1 {
+                  & a {
                     margin-right: 20px;
                     font-family: sans-serif;
                     font-size: 16px;
@@ -2009,9 +2016,28 @@ body {
               font-size: 40px;
               font-family: "Quicksand", sans-serif;
               text-transform: uppercase;
+              @media (max-width: 470px) {
+                font-size: 24px;
+              }
+              @media (max-width: 370px) {
+                font-size: 18px;
+              }
             }
             .info {
               @include flex-jc-ai(space-between, center);
+
+              @media (max-width: 470px) {
+                .tags {
+                  & span {
+                    font-size: 14px;
+                  }
+                }
+              }
+              @media (max-width: 370px) {
+                .tags {
+                  font-size: 13px;
+                }
+              }
               .fb-icon {
                 margin-left: 35px;
               }
@@ -2753,7 +2779,7 @@ body {
           .definition-header {
             .definition-title {
               h1 {
-                @media (min-width: 700px) {
+                @media (max-width: 700px) {
                   font-size: 32px;
                 }
               }

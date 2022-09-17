@@ -436,14 +436,57 @@ if (recoveryButton) {
     }
   });
 }
+
+//------------- recovery email validation--------------//
+const recoveryEmailButton = document.querySelector(".submit-email-recovery");
+const recoveryEmailSuccess = document.querySelector(".recovery-email-success");
+const recEmailForm = document.querySelector(".recovery-email");
+const recoveryEmailParag = document.querySelector(".recovery-email-title");
+const recoveryEmailForm = document.querySelector(".email-form");
+const recEmailIput = document.querySelector(".em-recovery");
+const emailsuccesText = document.querySelector(".email-change-text");
+if (recoveryEmailButton) {
+  recoveryEmailButton.addEventListener("click", () => {
+    if (recEmailIput.value.length === 0) {
+      console.log(recEmailIput.value.length);
+
+      recEmailIput.nextSibling.nextSibling.children[0].children[1].innerText =
+        "ველი სავალდებულოა";
+      recEmailIput.classList.add("errorBorder");
+      recEmailIput.nextSibling.nextSibling.classList.remove("hidden");
+    }
+
+    if (recEmailIput.value && !validateEmail(recEmailIput.value)) {
+      recEmailIput.nextSibling.nextSibling.children[0].children[1].innerText =
+        "ელ.ფოსტა არ არის ვალიდური";
+      recEmailIput.classList.add("errorBorder");
+      recEmailIput.nextSibling.nextSibling.classList.remove("hidden");
+    }
+
+    if (recEmailIput.value && validateEmail(recEmailIput.value)) {
+      recoveryEmailSuccess.classList.remove("hidden");
+      recoveryEmailForm.classList.add("hidden");
+      recoveryEmailParag.classList.add("hidden");
+      emailsuccesText.innerHTML = `პაროლის აღდგენის ინსტრუქცია გამოგზავნილია თქვენს ელ-ფოსტაზე: ${recEmailIput.value}`;
+    }
+  });
+}
+
 // click text "პაროლის აღდგენა"
 const tglFrom = document.querySelector(".toggle-form");
 
+const recPassword = document.querySelector(".rec-passowrd-text");
+
 function showRecPass() {
   tglFrom.classList.add("click-recovery");
-  recPassForm.classList.add("show-recovery-form");
+  recEmailForm.classList.add("show-recovery-form");
 }
 
+if (recPassword) {
+  recPassword.addEventListener("click", () => {
+    showRecPass();
+  });
+}
 // Dropdown menu
 const profile = document.getElementById("profile");
 const profileMenu = document.getElementById("profile-menu");
@@ -519,7 +562,7 @@ if (document.querySelector("ul.nav-ul")) {
           <div class="termin-tag-social">
             <h2>${el.termin}</h2>
             <div class="tagandsocial">
-            <h1>Front-End</h1>
+            <a href="#">Front-End</a>
               <div class="fb-icon">
                 <img src="../../assets/images/fb.svg" alt="fb" />
               </div>
