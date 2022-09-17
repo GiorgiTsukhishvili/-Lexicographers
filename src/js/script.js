@@ -444,6 +444,7 @@ const recEmailForm = document.querySelector(".recovery-email");
 const recoveryEmailParag = document.querySelector(".recovery-email-title");
 const recoveryEmailForm = document.querySelector(".email-form");
 const recEmailIput = document.querySelector(".em-recovery");
+const emailsuccesText = document.querySelector(".email-change-text");
 if (recoveryEmailButton) {
   recoveryEmailButton.addEventListener("click", () => {
     if (recEmailIput.value.length === 0) {
@@ -466,6 +467,7 @@ if (recoveryEmailButton) {
       recoveryEmailSuccess.classList.remove("hidden");
       recoveryEmailForm.classList.add("hidden");
       recoveryEmailParag.classList.add("hidden");
+      emailsuccesText.innerHTML = `პაროლის აღდგენის ინსტრუქცია გამოგზავნილია თქვენს ელ-ფოსტაზე: ${recEmailIput.value}`;
     }
   });
 }
