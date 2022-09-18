@@ -2730,8 +2730,15 @@ body main section.definition-offer .container .definition-header-1 .definition-t
       -ms-flex-align: center;
           align-items: center;
 }
+body main section.definition-offer .container .definition-header-1 .definition-title .info .tags a {
+  background-color: #eed370;
+  padding: 5px 20px;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #1d2933;
+}
 @media (max-width: 470px) {
-  body main section.definition-offer .container .definition-header-1 .definition-title .info .tags span {
+  body main section.definition-offer .container .definition-header-1 .definition-title .info .tags a {
     font-size: 14px;
   }
 }
