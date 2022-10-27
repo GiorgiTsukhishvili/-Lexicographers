@@ -1,3 +1,4 @@
+const pageNumbers = document.querySelectorAll('.page-num');
 const myTerms = document.querySelector(".profile-termins-result");
 // burger navigation
 const main = document.getElementById("menu");
@@ -67,7 +68,7 @@ const readMore = document.querySelector(".more-click");
 const text = document.querySelector(".text");
 
 if (readMore) {
-  readMore.addEventListener("click", (e) => {
+  readMore.addEventListener("click", () => {
     text.classList.toggle("show-more");
     if (readMore.innerHTML === "წაიკითხეთ სრულად") {
       readMore.innerHTML = "შეამცირეთ ტექსტი";
@@ -550,7 +551,6 @@ if (document.querySelector("ul.nav-ul")) {
           .querySelector(".profile-edit");
         rightInnerActive.classList.toggle("active");
         rightInnerActive.classList.toggle("hidden");
-
         myTerms.classList.toggle("active");
         myTerms.classList.toggle("hidden");
       }
@@ -680,12 +680,12 @@ if (saveButton) {
 const eyes = document.querySelectorAll(".show-password");
 eyes.forEach((item) => {
   item.addEventListener("click", () => {
-    x = item.previousElementSibling;
-    if (x.type === "password") {
-      x.type = "text";
-    } else {
-      x.type = "password";
-    }
+    let x = item.parentNode.querySelector('input')
+      if (x.type === "password") {
+        x.type = "text";
+      } else {
+        x.type = "password";
+      }
   });
 });
 // add photo
@@ -805,3 +805,24 @@ if (authors) {
     }
   });
 }
+// pagination active class
+pageNumbers.forEach((num) => {
+  num.addEventListener('click', (e) => {
+    if(!e.target.classList.contains('active-page')) {
+      pageNumbers.forEach(item => item.classList.remove('active-page'))
+      e.target.classList.add('active-page')
+    }
+  })
+})
+// letters active class
+const letters = document.querySelectorAll('.swiper-slide')
+
+letters.forEach(letter => {
+  letter.addEventListener('click', (e) => {
+    if(!e.target.classList.contains('active-letter')) {
+      letters.forEach(letter => letter.classList.remove('active-letter'))
+      e.target.classList.add('active-letter')
+    }
+  })
+})
+// letters active class
