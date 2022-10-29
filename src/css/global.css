@@ -1590,7 +1590,7 @@ body main section.about-project .container .left-block .about-project-text h5:ho
 }
 body main section.about-project .container .left-block .about-project-text p {
   max-width: 724px;
-  margin: 45px 0;
+  margin: 30px 0;
   font-family: "DejaVuSans";
   font-size: 18px;
   color: #1d2933;
@@ -3393,7 +3393,7 @@ body footer .container .tablet-responsive {
   body main section.about-project .container .left-block .about-project-text p {
     font-size: 16px;
     line-height: normal;
-    margin: 5px 0 30px 0;
+    margin: 5px 0 20px 0;
   }
   body main section.about-project .container .left-block a .btn-your-term {
     min-width: 284px;
@@ -4032,7 +4032,6 @@ body footer .container .tablet-responsive .contact-info p a:visited:hover {
   body main section.about-project .container .left-block .about-project-text p {
     font-size: 16px;
     line-height: normal;
-    margin: 5px 0 30px 0;
   }
   body main section.about-project .container .left-block a .btn-your-term {
     min-width: 175px;
