@@ -712,7 +712,7 @@ if (terms) {
       if (auth === "true") {
         item.children[0].href = "src/pages/definition.html";
       } else {
-        item.children[0].href = "./src/pages/new_term.html";
+        item.children[0].href = "./src/pages/login_or_register.html";
       }
     });
   });
