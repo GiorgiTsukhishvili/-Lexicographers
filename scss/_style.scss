@@ -3,7 +3,52 @@
   width: 95%;
   margin: 0 auto;
 }
-
+// 
+.more-click {
+  margin-bottom: 10px;
+  display: inline-block;
+  font-family: $venuri;
+  font-size: 18px;
+  color: $btnGray;
+  text-decoration: underline;
+  line-height: 22px;
+  cursor: pointer;
+  &:hover {
+    color: $black;
+  }
+}
+.text {
+  max-width: 724px;
+  width: 100%;
+  h5 {
+    font-family: $venuri;
+    font-size: 40px;
+    line-height: 45px;
+    color: $darkBlue;
+    margin-bottom: 45px;
+  }
+  .more-texts {
+    display: none;
+  }
+  &.show-more {
+    .more-texts {
+      display: inline-block;
+    }
+  }
+  .texts {
+    color: $black;
+    font-family: $dejavu;
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 8px;
+    
+  }
+  
+}
+.swiper-slide.active-letter {
+  background-color: $tagsyellow;
+}
+// 
 .rotate {
   transform: rotate(180deg);
 }
@@ -292,7 +337,7 @@ body {
         justify-content: space-around;
         max-width: 1536px;
         width: 100%;
-        .text {
+        .main-text {
           max-width: 469px;
           width: 100%;
 
@@ -485,7 +530,6 @@ body {
             margin: 30px 0 60px 0;
             padding: 20px 0 20px 20px;
             position: relative;
-
             .like-number {
               position: absolute;
               top: 40%;
@@ -527,7 +571,7 @@ body {
             }
             h2 {
               font-family: $dejavu;
-              font-size: 40px;
+              font-size: 30px;
               color: $darkBlue;
               margin-bottom: 12px;
 
@@ -551,13 +595,13 @@ body {
           }
         }
         .pagination {
-          @include flex-jc-ai(center, center);
+          @include flex-jc-ai(space-evenly, center);
           width: 100%;
           .left-arrow {
-            display: none;
+            cursor: pointer;
           }
           .right-arrow {
-            display: none;
+            cursor: pointer;
           }
           .page-numbers {
             @include flex-jc-ai(center, center);
@@ -571,7 +615,7 @@ body {
               font-size: 30px;
               font-family: $dejavu;
               @include flex-jc-ai(center, center);
-              &:first-child {
+              &.active-page {
                 background-color: $tagsyellow;
               }
             }
@@ -1037,7 +1081,7 @@ body {
             }
             p {
               max-width: 724px;
-              margin: 45px 0;
+              margin: 30px 0;
               font-family: $dejavu;
               font-size: 18px;
               color: $darkBlue;
@@ -1103,38 +1147,7 @@ body {
           @include flex-jc(space-between);
           margin-right: 10%;
 
-          .text {
-            max-width: 724px;
-            width: 100%;
-            h5 {
-              font-family: $venuri;
-              font-size: 40px;
-              line-height: 45px;
-              color: $darkBlue;
-              margin-bottom: 45px;
-            }
-            .texts {
-              color: $black;
-              font-family: $dejavu;
-              font-size: 18px;
-              line-height: 26px;
-              margin-bottom: 8px;
-              .more-texts {
-                display: none;
-              }
-            }
-            .more-click {
-              font-family: $venuri;
-              font-size: 18px;
-              color: $btnGray;
-              text-decoration: underline;
-              line-height: 22px;
-              cursor: pointer;
-              &:hover {
-                color: $black;
-              }
-            }
-          }
+          
           .show-more {
             .texts {
               .more-texts {
@@ -1302,7 +1315,27 @@ body {
       }
     }
     //
-
+    //login_required page
+    .login-required {
+        font-family: $venuri;
+        color: $darkBlue;
+        .container {
+          padding: 100px 0;
+          h2{
+            display: block;
+            font-size: 40px;
+            border-bottom: 1px solid $black;
+        }
+        h3{
+          margin: 40px 0;
+          font-size: 30px;
+          a{
+            font-size: 26px;  
+            font-weight: bold;
+          }
+        }
+        }
+    }
     // Contact
     section.contact-form {
       .container {
@@ -1359,9 +1392,8 @@ body {
             :first-child {
               margin-top: 0;
             }
-            input[type="button"] {
+            input#sendButton {
               width: 140px;
-              height: 62px;
               background: $btnGray;
               color: $white;
               font-size: 18px;
@@ -1649,7 +1681,7 @@ body {
                 }
                 h2 {
                   font-family: $dejavu;
-                  font-size: 40px;
+                  font-size: 30px;
                   color: $darkBlue;
                   text-transform: uppercase;
                 }
@@ -1680,7 +1712,7 @@ body {
                 }
                 h2 {
                   font-family: $dejavu;
-                  font-size: 40px;
+                  font-size: 26px;
                   color: $darkBlue;
                   margin-bottom: 17px;
                 }
@@ -1846,7 +1878,7 @@ body {
                   h2 {
                     font-family: sans-serif;
                     text-transform: uppercase;
-                    font-size: 40px;
+                    font-size: 30px;
                     @media (max-width: 580px) {
                       font-size: 22px;
                     }
@@ -1902,7 +1934,7 @@ body {
                   @include flex-jc-ai(space-between, flex-end);
                   .definition-info {
                     h2 {
-                      font-size: 40px;
+                      font-size: 26px;
                       margin-bottom: 9px;
 
                       @media (max-width: 580px) {
@@ -2028,7 +2060,7 @@ body {
 
               .tags {
                 & a {
-                  background-color: #eed370;
+                  // background-color: #eed370;
                   padding: 5px 20px;
                   font-size: 16px;
                   text-transform: capitalize;
@@ -2182,10 +2214,8 @@ body {
     width: 100%;
     padding: 90px 0;
     box-shadow: 0px -3px 6px #00000029;
-
     .container {
       @include flex-jc(space-between);
-
       .left-block-social {
         a {
           color: $darkBlue;
@@ -2202,23 +2232,21 @@ body {
         .social-icons {
           display: flex;
           margin-top: 20px;
-
-          .circle {
-            margin-right: 70px;
-            width: 46px;
-            height: 46px;
-            border-radius: 50%;
-            background-color: $btnGray;
-            transition: all ease-in-out 0.3s;
-            @include flex-jc-ai(center, center);
-            cursor: pointer;
-
-            a {
-              color: white;
-              font-size: x-large;
+          justify-content: space-evenly;
+          a{
+            color: white;
+            font-size: x-large;
+            .circle {
+              // margin-right: 70px;
+              width: 46px;
+              height: 46px;
+              border-radius: 50%;
+              background-color: $btnGray;
+              transition: all ease-in-out 0.3s;
+              @include flex-jc-ai(center, center);
+              cursor: pointer;
             }
           }
-
           .insta:hover {
             background-color: $tagsyellow;
             transition: all ease-in-out 0.3s;
@@ -2229,7 +2257,6 @@ body {
           .twitter:hover {
             background-color: $tagsyellow;
             transition: all ease-in-out 0.3s;
-
             a {
               color: $btnGray;
             }
@@ -2237,7 +2264,6 @@ body {
           .fb:hover {
             background: $tagsyellow;
             transition: all ease-in-out 0.3s;
-
             a {
               color: $btnGray;
             }
@@ -2247,26 +2273,22 @@ body {
       .middle-block {
         display: flex;
         align-items: center;
-
         .contact-info {
           p {
             font-size: 18px;
             font-family: $dejavu;
             transition: all ease-in-out 0.2s;
             cursor: pointer;
-
             a:link,
             a:visited {
               text-decoration: none;
               transition: all ease-in-out 0.2s;
               cursor: pointer;
               color: $black;
-
               &:hover {
                 color: $tagsyellow;
               }
             }
-
             &:hover {
               color: $tagsyellow;
             }
@@ -2287,7 +2309,6 @@ body {
           display: flex;
           flex-direction: column;
           align-items: flex-end;
-
           p {
             display: flex;
             font-size: 18px;
@@ -2295,7 +2316,6 @@ body {
             margin-bottom: 48px;
             transition: all ease-in-out 0.2s;
             cursor: pointer;
-
             &:hover {
               color: $tagsyellow;
             }
@@ -2488,6 +2508,24 @@ body {
           }
         }
       }
+       //login_required page
+    .login-required {
+      font-family: $venuri;
+      color: $darkBlue;
+      .container {
+        padding: 100px 0;
+        h2{
+          font-size: 29px;
+          line-height: 30px;
+      }
+      h3{
+        font-size: 20px;
+        a{
+          font-size: 18px;  
+        }
+      }
+      }
+  }
       section.about-project-section {
         .container {
           min-width: 262px;
@@ -2526,28 +2564,6 @@ body {
           }
         }
       }
-      // section.partners-section {
-      //   .container {
-      //     min-width: 262px;
-      //     width: 90%;
-      //     margin: 0 auto;
-      //     .organisation-partenrs {
-      //       margin-bottom: 40px;
-      //       p {
-      //         font-size: 16px;
-      //         line-height: normal;
-      //         color: #707070;
-      //         margin-bottom: 20px;
-      //       }
-      //       .partner-logo {
-      //         .logos {
-      //           width: 66px;
-      //           height: 66px;
-      //         }
-      //       }
-      //     }
-      //   }
-      // }
       section.poster {
         height: 238px;
         margin-bottom: 30px;
@@ -2558,7 +2574,7 @@ body {
             width: 218px;
             margin-right: 20%;
           }
-          .text {
+          .main-text {
             width: 220px;
             p {
               font-size: 31px;
@@ -2617,7 +2633,7 @@ body {
               p {
                 font-size: 16px;
                 line-height: normal;
-                margin: 5px 0 30px 0;
+                margin: 5px 0 20px 0;
               }
             }
             a {
@@ -2686,7 +2702,6 @@ body {
                       width: 90%;
                       .swiper-slide {
                         padding: 5px 0 2px 0;
-
                         text-align: center;
                         font-size: 18px;
                         line-height: 20px;
@@ -2752,9 +2767,7 @@ body {
             }
           }
           .pagination {
-            justify-content: space-between;
             width: 100%;
-
             .left-arrow {
               display: block;
               transition: all 0.3s;
@@ -2854,11 +2867,9 @@ body {
             margin-bottom: 10px;
             margin-top: 0;
             .insta {
-              margin-right: 40px;
             }
             .fb {
               margin-right: 0;
-              margin-left: -30px;
             }
           }
         }
@@ -3239,7 +3250,6 @@ body {
               p {
                 font-size: 16px;
                 line-height: normal;
-                margin: 5px 0 30px 0;
               }
             }
             a {
@@ -3353,7 +3363,6 @@ body {
             }
           }
           .pagination {
-            justify-content: space-between;
             width: 100%;
             .left-arrow {
               display: block;
@@ -3439,11 +3448,12 @@ body {
             margin-bottom: 10px;
             margin-top: 0;
             .insta {
-              margin-right: 40px;
             }
             .fb {
               margin-right: 0;
-              margin-left: -30px;
+            }
+            .twitter {
+              margin: 0 10px;
             }
           }
         }
