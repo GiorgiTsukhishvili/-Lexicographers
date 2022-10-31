@@ -800,7 +800,7 @@ body main section.bank-results .container .result .termin-tag-social .tagandsoci
 }
 body main section.bank-results .container .result .termin-tag-social h2 {
   font-family: "DejaVuSans";
-  font-size: 40px;
+  font-size: 30px;
   color: #1d2933;
   text-transform: uppercase;
 }
@@ -868,7 +868,7 @@ body main section.bank-results .container .result .description .like img {
 }
 body main section.bank-results .container .result .description h2 {
   font-family: "DejaVuSans";
-  font-size: 30px;
+  font-size: 26px;
   color: #1d2933;
   margin-bottom: 12px;
 }
@@ -2924,7 +2924,7 @@ body main section.definition-offer .container .other-terms .description .like im
 }
 body main section.definition-offer .container .other-terms .description .info h2 {
   font-family: "DejaVuSans";
-  font-size: 40px;
+  font-size: 30px;
   color: #1d2933;
   margin-bottom: 12px;
 }
@@ -4134,7 +4134,7 @@ body footer .container .tablet-responsive .contact-info p a:visited:hover {
 }
 @media only screen and (max-width: 767px) {
   body main section.bank-results .container .result .termin-tag-social h2 {
-    font-size: 22px;
+    font-size: 18px;
   }
   body main section.bank-results .container .result .description h2 {
     font-size: 18px;
