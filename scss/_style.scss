@@ -514,7 +514,7 @@ body {
             }
             h2 {
               font-family: $dejavu;
-              font-size: 40px;
+              font-size: 30px;
               color: $darkBlue;
               text-transform: uppercase;
 
@@ -571,7 +571,7 @@ body {
             }
             h2 {
               font-family: $dejavu;
-              font-size: 30px;
+              font-size: 26px;
               color: $darkBlue;
               margin-bottom: 12px;
 
@@ -2057,7 +2057,6 @@ body {
             }
             .info {
               @include flex-jc-ai(space-between, center);
-
               .tags {
                 & a {
                   // background-color: #eed370;
@@ -2067,7 +2066,6 @@ body {
                   color: #1d2933;
                 }
               }
-
               @media (max-width: 470px) {
                 .tags {
                   & a {
@@ -2181,7 +2179,7 @@ body {
             .info {
               h2 {
                 font-family: $dejavu;
-                font-size: 40px;
+                font-size: 30px;
                 color: $darkBlue;
                 margin-bottom: 12px;
               }
@@ -3281,25 +3279,6 @@ body {
               flex-direction: column;
               .left-alphabet {
                 width: 100%;
-                // .cont {
-                //   display: flex;
-                //   .mySwiper,
-                //   .mySwiper2 {
-                //     width: 80%;
-                //     .swiper-wrapper {
-                //       width: 90%;
-                //       .swiper-slide {
-                //         margin-right: 0px;
-                //         text-align: center;
-                //         font-size: 18px;
-                //         line-height: 20px;
-                //         display: flex;
-                //         align-items: center;
-                //       }
-                //     }
-                //   }
-                // }
-
                 .ge-alphabet {
                   justify-content: space-between;
                   img {
@@ -3338,7 +3317,7 @@ body {
           .result {
             .termin-tag-social {
               h2 {
-                font-size: 22px;
+                font-size: 18px;
               }
             }
             .description {
