@@ -1908,10 +1908,6 @@ body {
                 transition: all 0.2s linear;
                 height: 18px;
                 overflow: hidden;
-
-                &::-webkit-scrollbar {
-                  display: none;
-                }
                 .definition-header {
                   cursor: pointer;
                   margin-bottom: 16px;
