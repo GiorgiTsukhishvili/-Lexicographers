@@ -571,7 +571,7 @@ body {
             }
             h2 {
               font-family: $dejavu;
-              font-size: 26px;
+              font-size: 22px;
               color: $darkBlue;
               margin-bottom: 12px;
 
@@ -1706,7 +1706,7 @@ body {
                 }
                 h2 {
                   font-family: $dejavu;
-                  font-size: 26px;
+                  font-size: 22px;
                   color: $darkBlue;
                   margin-bottom: 17px;
                 }
@@ -1923,7 +1923,7 @@ body {
                   @include flex-jc-ai(space-between, flex-end);
                   .definition-info {
                     h2 {
-                      font-size: 26px;
+                      font-size: 22px;
                       margin-bottom: 9px;
 
                       @media (max-width: 580px) {
@@ -2172,7 +2172,7 @@ body {
             .info {
               h2 {
                 font-family: $dejavu;
-                font-size: 30px;
+                font-size: 22px;
                 color: $darkBlue;
                 margin-bottom: 12px;
               }
