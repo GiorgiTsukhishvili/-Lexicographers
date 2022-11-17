@@ -1072,12 +1072,6 @@ body {
               font-family: $venuri;
               line-height: 45px;
               color: $darkBlue;
-              transition: all ease-in-out 0.2s;
-              cursor: pointer;
-
-              &:hover {
-                color: $tagsyellow;
-              }
             }
             p {
               max-width: 724px;
@@ -1897,7 +1891,6 @@ body {
                 }
               }
               .active {
-                // max-height: fit-content !important;
                 height: 200px !important;
                 overflow: auto !important;
               }
@@ -2055,7 +2048,6 @@ body {
               @include flex-jc-ai(space-between, center);
               .tags {
                 & a {
-                  // background-color: #eed370;
                   padding: 5px 20px;
                   font-size: 16px;
                   text-transform: capitalize;

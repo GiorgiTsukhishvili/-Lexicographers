@@ -1581,12 +1581,6 @@ body main section.about-project .container .left-block .about-project-text h5 {
   font-family: "BPGVenuri2010";
   line-height: 45px;
   color: #1d2933;
-  -webkit-transition: all ease-in-out 0.2s;
-  transition: all ease-in-out 0.2s;
-  cursor: pointer;
-}
-body main section.about-project .container .left-block .about-project-text h5:hover {
-  color: #eed370;
 }
 body main section.about-project .container .left-block .about-project-text p {
   max-width: 724px;
