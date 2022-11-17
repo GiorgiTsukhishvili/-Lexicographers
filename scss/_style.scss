@@ -2051,7 +2051,12 @@ body {
                   padding: 5px 20px;
                   font-size: 16px;
                   text-transform: capitalize;
-                  color: #1d2933;
+                  color: $bgcolor;
+                  background-color: $btnGray;
+                  &.active {
+                    color: $darkBlue;
+                    background-color: $tagsyellow;
+                  }
                 }
               }
               @media (max-width: 470px) {

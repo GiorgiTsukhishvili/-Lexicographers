@@ -2755,7 +2755,12 @@ body main section.definition-offer .container .definition-header-1 .definition-t
   padding: 5px 20px;
   font-size: 16px;
   text-transform: capitalize;
+  color: #f9f7f5;
+  background-color: #798996;
+}
+body main section.definition-offer .container .definition-header-1 .definition-title .info .tags a.active {
   color: #1d2933;
+  background-color: #eed370;
 }
 @media (max-width: 470px) {
   body main section.definition-offer .container .definition-header-1 .definition-title .info .tags a {
