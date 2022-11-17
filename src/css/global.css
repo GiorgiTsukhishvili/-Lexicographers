@@ -868,7 +868,7 @@ body main section.bank-results .container .result .description .like img {
 }
 body main section.bank-results .container .result .description h2 {
   font-family: "DejaVuSans";
-  font-size: 26px;
+  font-size: 22px;
   color: #1d2933;
   margin-bottom: 12px;
 }
@@ -1581,12 +1581,6 @@ body main section.about-project .container .left-block .about-project-text h5 {
   font-family: "BPGVenuri2010";
   line-height: 45px;
   color: #1d2933;
-  -webkit-transition: all ease-in-out 0.2s;
-  transition: all ease-in-out 0.2s;
-  cursor: pointer;
-}
-body main section.about-project .container .left-block .about-project-text h5:hover {
-  color: #eed370;
 }
 body main section.about-project .container .left-block .about-project-text p {
   max-width: 724px;
@@ -2355,7 +2349,7 @@ body main .profile-section .container .right-inner .profile-termins-result .resu
 }
 body main .profile-section .container .right-inner .profile-termins-result .result .description h2 {
   font-family: "DejaVuSans";
-  font-size: 26px;
+  font-size: 22px;
   color: #1d2933;
   margin-bottom: 17px;
 }
@@ -2626,7 +2620,7 @@ body main .profile-section .container .right-inner .my-terms .term .definition .
           align-items: flex-end;
 }
 body main .profile-section .container .right-inner .my-terms .term .definition .definition-box .definition-info h2 {
-  font-size: 26px;
+  font-size: 22px;
   margin-bottom: 9px;
 }
 @media (max-width: 580px) {
@@ -2761,7 +2755,12 @@ body main section.definition-offer .container .definition-header-1 .definition-t
   padding: 5px 20px;
   font-size: 16px;
   text-transform: capitalize;
+  color: #f9f7f5;
+  background-color: #798996;
+}
+body main section.definition-offer .container .definition-header-1 .definition-title .info .tags a.active {
   color: #1d2933;
+  background-color: #eed370;
 }
 @media (max-width: 470px) {
   body main section.definition-offer .container .definition-header-1 .definition-title .info .tags a {
@@ -2921,7 +2920,7 @@ body main section.definition-offer .container .other-terms .description .like im
 }
 body main section.definition-offer .container .other-terms .description .info h2 {
   font-family: "DejaVuSans";
-  font-size: 30px;
+  font-size: 22px;
   color: #1d2933;
   margin-bottom: 12px;
 }

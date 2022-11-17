@@ -571,7 +571,7 @@ body {
             }
             h2 {
               font-family: $dejavu;
-              font-size: 26px;
+              font-size: 22px;
               color: $darkBlue;
               margin-bottom: 12px;
 
@@ -1072,12 +1072,6 @@ body {
               font-family: $venuri;
               line-height: 45px;
               color: $darkBlue;
-              transition: all ease-in-out 0.2s;
-              cursor: pointer;
-
-              &:hover {
-                color: $tagsyellow;
-              }
             }
             p {
               max-width: 724px;
@@ -1712,7 +1706,7 @@ body {
                 }
                 h2 {
                   font-family: $dejavu;
-                  font-size: 26px;
+                  font-size: 22px;
                   color: $darkBlue;
                   margin-bottom: 17px;
                 }
@@ -1897,7 +1891,6 @@ body {
                 }
               }
               .active {
-                // max-height: fit-content !important;
                 height: 200px !important;
                 overflow: auto !important;
               }
@@ -1930,7 +1923,7 @@ body {
                   @include flex-jc-ai(space-between, flex-end);
                   .definition-info {
                     h2 {
-                      font-size: 26px;
+                      font-size: 22px;
                       margin-bottom: 9px;
 
                       @media (max-width: 580px) {
@@ -2055,11 +2048,15 @@ body {
               @include flex-jc-ai(space-between, center);
               .tags {
                 & a {
-                  // background-color: #eed370;
                   padding: 5px 20px;
                   font-size: 16px;
                   text-transform: capitalize;
-                  color: #1d2933;
+                  color: $bgcolor;
+                  background-color: $btnGray;
+                  &.active {
+                    color: $darkBlue;
+                    background-color: $tagsyellow;
+                  }
                 }
               }
               @media (max-width: 470px) {
@@ -2175,7 +2172,7 @@ body {
             .info {
               h2 {
                 font-family: $dejavu;
-                font-size: 30px;
+                font-size: 22px;
                 color: $darkBlue;
                 margin-bottom: 12px;
               }
