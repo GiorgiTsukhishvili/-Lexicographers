@@ -517,9 +517,8 @@ body {
               font-size: 30px;
               color: $darkBlue;
               text-transform: uppercase;
-
               @media (max-width: 1400px) {
-                font-size: 30px;
+                font-size: 22px;
               }
             }
             @include flex-jc-ai(space-between, center);
@@ -1813,11 +1812,6 @@ body {
                 cursor: pointer;
               }
             }
-            // input::-webkit-outer-spin-button,
-            // input::-webkit-inner-spin-button {
-            //   -webkit-appearance: none;
-            //   margin: 0;
-            // }
             button {
               background: $btnGray;
               outline: none;
@@ -1873,11 +1867,10 @@ body {
                     font-family: sans-serif;
                     text-transform: uppercase;
                     font-size: 30px;
-                    @media (max-width: 580px) {
+                    @media (max-width: 1400px) {
                       font-size: 22px;
                     }
-
-                    @media (max-width: 360px) {
+                    @media (max-width: 480px) {
                       font-size: 18px;
                     }
                   }
