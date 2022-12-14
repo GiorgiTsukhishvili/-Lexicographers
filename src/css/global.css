@@ -3188,13 +3188,8 @@ body footer .container .tablet-responsive {
     color: #1d2933;
     padding-right: 5%;
   }
-  body header .burger-navigation nav ul .shesvla {
-    display: none;
-  }
   body header .burger-navigation nav ul .profile-weird {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: none;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -3779,13 +3774,8 @@ body footer .container .tablet-responsive .contact-info p a:visited:hover {
     color: #1d2933;
     padding-right: 5%;
   }
-  body header .burger-navigation nav ul .shesvla {
-    display: none;
-  }
   body header .burger-navigation nav ul .profile-weird {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: none;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
