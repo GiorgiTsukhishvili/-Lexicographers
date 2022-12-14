@@ -4,7 +4,8 @@ Branch Structure
 
 main branch: development test branch: pre-development
 
-development - stable branch pre-development - working branch
+development - stable branch 
+pre-development - working branch
 
 pull request
 
